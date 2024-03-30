@@ -716,10 +716,10 @@
   .child,
   .mask-group-icon3 {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 360px;
-    height: 714px;
+    bottom: 0;
+    right: 0;
+    width: 382;
+    height: 559;
   }
   .child {
     background-color: var(--gray-gray-5);
@@ -822,9 +822,9 @@
   }
   .mask-group-icon4 {
     position: absolute;
-    top: 0;
+    top: 0; 
     left: 0;
-    width: 1440px;
+    width: 1800px;
     height: 500px;
     object-fit: cover;
   }
@@ -866,7 +866,7 @@
     position: absolute;
     top: 2756px;
     left: 0;
-    width: 1440px;
+    width: 1800px;
     height: 500px;
     font-size: var(--header-3-bold-size);
     color: var(--white-500);
