@@ -348,6 +348,7 @@
     flex-direction: row;
   }
   .button {
+    border: var(--primary-500);
     width: 98px;
     border-radius: 0 var(--br-3xs) var(--br-3xs) 0;
     background-color: var(--primary-500);
@@ -427,6 +428,7 @@
     width: 98px;
     border-radius: var(--br-3xs);
     background-color: var(--primary-500);
+    border: var(--primary-500);
     height: 50px;
     display: flex;
     flex-direction: row;

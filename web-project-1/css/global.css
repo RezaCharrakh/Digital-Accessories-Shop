@@ -6,26 +6,35 @@ body {
   :root {
     /* fonts */
     --header-7-bold: Montserrat;
+    --header-4-regular: Montserrat;
   
     /* font sizes */
     --body-1-regular-size: 16px;
+    --body-1-bold-size: 16px;
+    --header-7-regular-size: 18px;
     --header-7-bold-size: 18px;
     --header-4-regular-size: 30px;
     --header-6-regular-size: 20px;
     --header-3-bold-size: 40px;
     --caption-regular-size: 12px;
     --header-1-bold-size: 80px;
+    --body-2-regular-size: 14px;
     --label-bold-size: 11px;
+    
   
     /* Colors */
     --white-500: #fff;
     --dark-500: #101316;
+    --gray-500: #a5a9ac;
+    --gray-iphone:#BEBEC6;
     --dark-dark-20: rgba(16, 19, 22, 0.2);
     --gray-gray-20: rgba(165, 169, 172, 0.2);
     --gray-gray-10: rgba(165, 169, 172, 0.1);
     --gray-gray-5: rgba(165, 169, 172, 0.05);
     --primary-500: #1c4e8e;
     --primary-primary-10: rgba(28, 78, 142, 0.1);
+    --color-option-color-option-3: #5d2fbe;
+    --color-option-color-option-4: #2f4fbe;
   
     /* Gaps */
     --gap-base: 16px;
@@ -35,6 +44,7 @@ body {
     --gap-5xs: 8px;
     --gap-xl: 20px;
     --gap-3xs: 10px;
+    --gap-126xl: 145px;
   
     /* Paddings */
     --padding-xl: 20px;
