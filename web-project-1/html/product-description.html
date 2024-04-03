@@ -39,7 +39,7 @@
                   <input class="text14" placeholder="Search" type="text" />
                 </div>
               </div>
-              <button class="button53 button54">
+              <button class="search-button">
                 Search
               </button>
             </div>
@@ -325,28 +325,24 @@
             <div class="more-details-container">
               <div class="more-details-header-parent">
                 <div class="more-details-header">
-                  <button class="descriptions">Descriptions</button>
-                  <button class="additional-information">
-                    Additional Information
-                  </button>
-                  <button class="reviews">Reviews</button>
+                  <button class="more-details-button" onclick="openTab(event, 'description-text-container')">Descriptions</button>
+                  <button class="more-details-button" onclick="openTab(event, 'information-text-container')">Additional Information</button>
+                  <button class="more-details-button" onclick="openTab(event, 'reviews-text-conteiner')">Reviews</button>
                 </div>
                 <div class="data-merger">
                   <div class="data-merger-child"></div>
-                  <div class="data-merger-item"></div>
                 </div>
               </div>
-              <div class="description-text-container">
+              <div id="description-text-container" class="tab-content">
                 <p class="description-text">
                   t is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters, as opposed to using 'Content
-                  here, content here', making it look like readable English.
-                  Many desktop publishing packages and web page editors now use
-                  Lorem Ipsum as their default model text, and a search for
-                  'lorem ipsum' will uncover many web sites still in their
-                  infancy.
+                   by the readable content of a page when looking at its layout.
+                    The point of using Lorem Ipsum is that it has a more-or-less
+                     normal distribution of letters, as opposed to using
+                      'Content here, content here', making it look like readable English.
+                       Many desktop publishing packages and web page editors now use Lorem Ipsum
+                        as their default model text, and a search for 'lorem ipsum' will uncover
+                         many web sites still in their infancy.
                 </p>
                 <p class="blank-line">&nbsp;</p>
                 <p class="description-text2">
@@ -354,6 +350,315 @@
                   accident, sometimes on purpose (injected humour and the like).
                 </p>
               </div>
+              <div id="information-text-container" class="tab-content">
+                <table class="information-table">
+                  <tr>
+                    <th>Brand</th>
+                    <td>Apple</td>
+                  </tr>
+                  <tr>
+                    <th>Item Height</th>
+                    <td>65 CM</td>
+                  </tr>
+                  <tr>
+                    <th>Item width</th>
+                    <td>31.4 CM</td>
+                  </tr>
+                  <tr>
+                    <th>Screen Size</th>
+                    <td>6.5 Inch</td>
+                  </tr>
+                  <tr>
+                    <th>Model Number</th>
+                    <td>MF841HN/A</td>
+                  </tr>
+                  <tr>
+                    <th>RAM Size</th>
+                    <td>6 GB</td>
+                  </tr>
+                  <tr>
+                    <th>Operating System</th>
+                    <td>ios 17</td>
+                  </tr>
+                </table>
+              </div>
+              <div id="reviews-text-conteiner" class="tab-content">
+                <form class="review-form">
+                  <div class="review-form-group">
+
+                    <div class="customer-reviews-wrapper">
+                      <b class="customer-reviews">Customer Reviews</b>
+                    </div>
+                    <div class="customer-info-container">
+                      <div class="customer-info-group">
+                        <img
+                          class="customer-profile"
+                          loading="lazy"
+                          alt=""
+                          src="../src/ellipse-956@2x.png"
+                        />
+      
+                        <div class="customer-name-rate-group">
+                          <div class="customer-name">Mark Williams</div>
+                          <div class="customer-rate">
+                            <img
+                              class="star-rate"
+                              alt=""
+                              src="../src/hugeiconinterfacesolidstar-5.svg"
+                            />
+      
+                            <img
+                              class="star-rate"
+                              alt=""
+                              src="../src/hugeiconinterfacesolidstar-5.svg"
+                            />
+      
+                            <img
+                              class="star-rate"
+                              alt=""
+                              src="../src/hugeiconinterfacesolidstar-5.svg"
+                            />
+      
+                            <img
+                              class="star-rate"
+                              alt=""
+                              src="../src/hugeiconinterfacesolidstar-5.svg"
+                            />
+      
+                            <img
+                              class="star-rate"
+                              alt=""
+                              src="../src/hugeiconinterfacesolidstar-5.svg"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <b class="review-title">Excellent Product, I Love It 😍</b>
+                      <div class="review-text">
+                        It is a long established fact that a reader will be distracted
+                        by the readable content of a page when looking at its layout.
+                        The point of using Lorem Ipsum is that it has a more-or-less
+                        normal distribution of letters, as opposed to using 'Content
+                        here, content here', making it look like readable English.
+                      </div>
+                    <div class="review-by-electro-posted-on-se-parent">
+                      <div class="review-by-electro-container">
+                        <span class="review-by">Review by </span>
+                        <span class="electro">Electro</span>
+                        <span class="posted-on"> Posted on </span>
+                        <span class="sep-08-2023">Sep 08, 2023</span>
+                      </div>
+                      <div class="value-splitter"></div>
+                    </div>
+                    <div class="customer-info-container">
+                      <div class="customer-info-group">
+                        <img
+                          class="customer-profile"
+                          loading="lazy"
+                          alt=""
+                          src="../src/ellipse-957@2x.png"
+                        />
+      
+                        <div class="customer-name-rate-group">
+                          <div class="customer-name">Alexa Johnson</div>
+                          <div class="customer-rate">
+                            <img
+                              class="star-rate"
+                              alt=""
+                              src="../src/hugeiconinterfacesolidstar-5.svg"
+                            />
+      
+                            <img
+                              class="star-rate"
+                              alt=""
+                              src="../src/hugeiconinterfacesolidstar-5.svg"
+                            />
+      
+                            <img
+                              class="star-rate"
+                              alt=""
+                              src="../src/hugeiconinterfacesolidstar-5.svg"
+                            />
+      
+                            <img
+                              class="star-rate"
+                              alt=""
+                              src="../src/hugeiconinterfacesolidstar-5.svg"
+                            />
+      
+                            <img
+                              class="star-rate"
+                              alt=""
+                              src="../src/hugeiconinterfacesolidstar-5.svg"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <b class="review-title"
+                      >My Brother is very much happy with this iPhone</b
+                    >
+                    
+                      <div class="review-text">
+                        It is a long established fact that a reader will be distracted
+                        by the readable content of a page when looking at its layout.
+                        The point of using Lorem Ipsum is that it has a more-or-less
+                        normal distribution of letters, as opposed to using 'Content
+                        here, content here', making it look like readable English.
+                      </div>
+                   
+                    <div class="review-by-electro-posted-on-se-group">
+                      <div class="review-by-electro-container1">
+                        <span class="review-by1">Review by </span>
+                        <span class="electro1">Electro</span>
+                        <span class="posted-on1"> Posted on </span>
+                        <span class="sep-08-20231">Sep 08, 2023</span>
+                      </div>
+                      <div class="frame-child17"></div>
+                    </div>
+                  
+                  <div class="add-review-container">
+                    <b class="add-your-review">Add your Review</b>
+                    <div class="add-review-group">
+                      <div class="your-rating">Your Rating</div>
+                      <div class="user-input">
+                        <div class="star-box">
+                          <img
+                            class="star-rating"
+                            alt=""
+                            src="../src/hugeiconinterfacesolidstar-15.svg"
+                          />
+      
+                          <div class="frame-child18"></div>
+                          <img
+                            class="star-rating"
+                            alt=""
+                            src="../src/hugeiconinterfacesolidstar-15.svg"
+                          />
+                        </div>
+                        <div class="star-box">
+                          <img
+                            class="star-rating"
+                            alt=""
+                            src="../src/hugeiconinterfacesolidstar-15.svg"
+                          />
+      
+                          <div class="vertical-line"></div>
+                          <div class="feedback-generator">
+                            <img
+                              class="star-rating"
+                              alt=""
+                              src="../src/hugeiconinterfacesolidstar-15.svg"
+                            />
+      
+                            <img
+                              class="star-rating"
+                              alt=""
+                              src="../src/hugeiconinterfacesolidstar-15.svg"
+                            />
+      
+                            <img
+                              class="star-rating"
+                              alt=""
+                              src="../src/hugeiconinterfacesolidstar-15.svg"
+                            />
+                          </div>
+                          <div class="vertical-line"></div>
+                          <div class="progress-tracker">
+                            <img
+                              class="star-rating"
+                              alt=""
+                              src="../src/hugeiconinterfacesolidstar-15.svg"
+                            />
+      
+                            <img
+                              class="star-rating"
+                              alt=""
+                              src="../src/hugeiconinterfacesolidstar-15.svg"
+                            />
+      
+                            <img
+                              class="star-rating"
+                              alt=""
+                              src="../src/hugeiconinterfacesolidstar-15.svg"
+                            />
+      
+                            <img
+                              class="star-rating"
+                              alt=""
+                              src="../src/hugeiconinterfacesolidstar-15.svg"
+                            />
+                          </div>
+                          <div class="vertical-line"></div>
+                          <div class="timekeeper">
+                            <img
+                              class="star-rating"
+                              alt=""
+                              src="../src/hugeiconinterfacesolidstar-15.svg"
+                            />
+      
+                            <img
+                              class="star-rating"
+                              alt=""
+                              src="../src/hugeiconinterfacesolidstar-15.svg"
+                            />
+      
+                            <img
+                              class="star-rating"
+                              alt=""
+                              src="../src/hugeiconinterfacesolidstar-15.svg"
+                            />
+      
+                            <img
+                              class="star-rating"
+                              alt=""
+                              src="../src/hugeiconinterfacesolidstar-15.svg"
+                            />
+      
+                            <img
+                              class="star-rating"
+                              alt=""
+                              src="../src/hugeiconinterfacesolidstar-15.svg"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-container">
+                      <div class="input-title">Name</div>
+                      <div class="input-text-conteiner">
+                        <input
+                          class="input-text"
+                          placeholder="Enter Your Name"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                    <div class="input-container">
+                      <div class="input-title">Email Address</div>
+                      <div class="input-text-conteiner">
+                        <input
+                          class="input-text"
+                          placeholder="Enter Your Email"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                    <div class="input-container">
+                      <div class="input-title">Your Review</div>
+                      
+                        <textarea class="input-textarea-review" placeholder="Enter Your Review"></textarea>
+                        
+                      
+                    </div>
+                  </div>
+                  <button class="button53">Submit</button>
+                </form>
+              </div>
+
+              <script src="../js/product.js"></script>
+              <!-- to do -->
             </div>
           </div>
           <div class="function-chain">
@@ -361,7 +666,7 @@
             <div class="data-aggregator1">
               <div class="condition-splitter">
                 <div class="rectangle-parent8">
-                  <div class="frame-child24"></div>
+                  
                   <img
                     class="image-22-icon2"
                     loading="lazy"
@@ -407,17 +712,17 @@
                   <div class="data-sorter5">$850.00</div>
                 </div>
               </div>
-              <div class="condition-splitter1">
-                <div class="rectangle-parent9">
-                  <div class="frame-child25"></div>
+              <div class="condition-splitter">
+                <div class="rectangle-parent8">
+                  
                   <img
-                    class="image-26-icon2"
+                    class="image-22-icon2"
                     loading="lazy"
                     alt=""
                     src="../src/image-26@2x.png"
                   />
                 </div>
-                <div class="frame-parent40">
+                <div class="output-collector4">
                   <div class="xiaomi-fimi-x8-mini-container">
                     <b class="xiaomi-fimi-x82">Xiaomi Fimi X8 Mini</b>
                     <div class="huge-iconinterfacesolidstar-parent17">
@@ -455,16 +760,16 @@
                   <div class="div36">$650.00</div>
                 </div>
               </div>
-              <div class="condition-splitter2">
-                <div class="rectangle-parent10">
-                  <div class="frame-child26"></div>
+              <div class="condition-splitter">
+                <div class="rectangle-parent8">
+                  
                   <img
                     class="image-19-icon4"
                     alt=""
                     src="../src/image-19@2x.png"
                   />
                 </div>
-                <div class="frame-parent41">
+                <div class="output-collector4">
                   <div class="apple-ipad-mini-6-wi-fi-container">
                     <b class="apple-ipad-mini2">Apple iPad Mini 6 Wi-Fi</b>
                     <div class="huge-iconinterfacesolidstar-parent18">
@@ -502,8 +807,8 @@
                   <div class="div37">$500.00</div>
                 </div>
               </div>
-              <div class="condition-splitter3">
-                <div class="rectangle-parent11">
+              <div class="condition-splitter">
+                <div class="rectangle-parent8">
                   <div class="frame-child27"></div>
                   <img
                     class="image-25-icon3"
@@ -512,7 +817,7 @@
                     src="../src/image-25@2x.png"
                   />
                 </div>
-                <div class="frame-parent42">
+                <div class="output-collector4">
                   <div class="asus-rog-delta-s-parent1">
                     <b class="asus-rog-delta3">Asus ROG Delta S</b>
                     <div class="huge-iconinterfacesolidstar-parent19">
