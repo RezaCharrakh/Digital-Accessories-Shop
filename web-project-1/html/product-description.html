@@ -273,7 +273,7 @@
                           </div>
                         </div>
                         <button class="button59">
-                          <div class="button60">Add to Cart</div>
+                          <div class="add-to-cart-button" onclick="openNav()">Add to Cart</div>
                           <img
                             class="huge-iconarrowssolidarrow-r9"
                             alt=""
@@ -1022,5 +1022,50 @@
         </div>
       </footer>
     </div>
+    <div id="side-bar-cart" class="side-bar-cart-conteiner">
+
+      <div class="side-bar-cart-title-group">
+        <div class="side-bar-cart-title">You have
+          <span class="side-bar-cart-number"> 2 items</span>
+           in your cart
+         </div>
+      </div>
+        
+      <div class="item-in-cart-conteiner">
+        <div class="item-in-cart-parent">
+        <div class="item-in-cart-group">
+            <img class="item-picture" src="../src/iPhone 14 pro-cart.svg"/>
+            <div class="item-details">
+              <div class="item-title">Apple iPhone 14 Pro</div>
+              <div class="item-price">$1999.00</div>
+              <div class="item-QTY">QTY: 1</div>
+            </div>
+            <img class="trash-icon" src="../src/trash.svg">
+        </div>
+        <div class="item-in-cart-group">
+          <img class="item-picture" src="../src/Asus ROG delta S-cart.svg"/>
+          <div class="item-details">
+            <div class="item-title">Asus ROG Delta S</div>
+            <div class="item-price">$250.00</div>
+            <div class="item-QTY">QTY: 1</div>
+          </div>
+          <img class="trash-icon2" src="../src/trash.svg">
+        </div>
+      </div>
+
+      <div class="side-bar-cart-footer-conteiner">
+          <div class="side-bar-cart-footer-group">
+            <div class="side-bar-cart-price-conteiner">
+                <div class="side-bar-total-price">Subtotal</div>
+                <div class="side-bar-total-price-num">$2249.00</div>
+            </div>
+          </div>
+          <button class="view-cart-button">View Cart</button>
+          <button class="checkout-button" onclick="closeNav()">Checkout</button>
+      </div>
+    </div>
+    
+    </div>
   </body>
+  
 </html>

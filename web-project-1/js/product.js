@@ -22,3 +22,14 @@ function openTab(evt, tabName) {
     // evt.currentTarget.className += " active";
   }
   document.body.addEventListener('DOMContentLoaded', openTab(event, 'description-text-container'));
+
+
+function openNav() {
+  document.getElementById("side-bar-cart").style.width = "352px";
+  document.getElementById("side-bar-cart").style.padding = "20px";
+}
+
+function closeNav() {
+  document.getElementById("side-bar-cart").style.width = "0";
+  document.getElementById("side-bar-cart").style.padding = "0";
+}
