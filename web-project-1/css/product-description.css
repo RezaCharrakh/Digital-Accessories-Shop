@@ -148,7 +148,7 @@
 }
 .button53:hover,
 .button55:hover {
-  background-color: var(--color-steelblue);
+  background-color: var(--color-option-color-option-4);
 }
 .parent-link,
 .siblings-sum {
@@ -873,6 +873,7 @@
   display: inline-block;
   min-width: 92px;
 }
+
 .huge-iconarrowssolidarrow-r9 {
   height: 24px;
   width: 24px;
@@ -899,7 +900,7 @@
   max-width: 100%;
 }
 .button59:hover {
-  background-color: var(--color-steelblue);
+  background-color: var(--color-option-color-option-4);
 }
 .huge-iconhealthoutlineheart1 {
   height: 24px;
@@ -1979,6 +1980,7 @@
   align-items: flex-start;
   gap: var(--gap-31xl);
   letter-spacing: normal;
+ 
 }
 .logo-icon3,
 .logo-text6 {
@@ -2123,7 +2125,7 @@
 }
 .button40:hover,
 .button42:hover {
-  background-color: var(--color-steelblue);
+  background-color: var(--color-option-color-option-4);
 }
 .form-input,
 .layout-manager {
@@ -2929,7 +2931,7 @@
 }
 .button46:hover,
 .button52:hover {
-  background-color: var(--color-steelblue);
+  background-color: var(--color-option-color-option-4);
 }
 .huge-iconhealthoutlineheart2 {
   height: 24px;
@@ -4600,7 +4602,7 @@
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 12222;
+  z-index: 36345123;
   top: 0;
   right: 0;
   background-color: var(--gray-gray-5);
@@ -4675,7 +4677,7 @@
   border-radius: var(--br-3xs);
   border: 0;
   font-size: var(--body-1-bold-size);
-  
+  cursor: pointer;
 }
 .view-cart-button{
   background-color: var(--gray-gray-20);
@@ -4683,6 +4685,9 @@
 .checkout-button{
   background-color: var(--primary-500);
   color: white;
+}
+.checkout-button:hover{
+  background-color: var(--color-option-color-option-4);
 }
 
 @media screen and (max-width: 1200px) {

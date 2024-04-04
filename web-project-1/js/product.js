@@ -33,3 +33,8 @@ function closeNav() {
   document.getElementById("side-bar-cart").style.width = "0";
   document.getElementById("side-bar-cart").style.padding = "0";
 }
+
+function openlogIn() {
+  document.getElementById("login-conteiner").style.opacity = "1";
+  document.getElementById("login-conteiner").style.pointerEvents = "all";
+}
