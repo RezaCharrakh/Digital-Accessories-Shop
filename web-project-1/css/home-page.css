@@ -270,18 +270,11 @@
     width: 100%;
     height: 974px;
   }
-  .logo-icon,
   .electro-logo {
     /* position: absolute; */
     margin-right: 20px;
     margin-top: 10px;
     overflow: hidden;
-  }
-  .logo-icon {
-    top: calc(50% - 29px);
-    width: 58px;
-    height: 58px;
-    object-fit: cover;
   }
   .electro-logo {
     top: 28px;
@@ -992,47 +985,6 @@
     flex-direction: column;
     justify-content: center;
   }
-
-  .image-60-icon {
-    width: 1440px;
-    height: 1024px;
-    position: relative;
-    object-fit: cover;
-    display: none;
-    max-width: 100%;
-    z-index: 0;
-  }
-  .overlay1 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    margin: 0 !important;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: var(--dark-dark-10);
-    z-index: 1;
-  }
-  .huge-iconinterfacesolidremo {
-    height: 18px;
-    width: 18px;
-    position: relative;
-    overflow: hidden;
-    flex-shrink: 0;
-  }
-  .button34 {
-    height: 34px;
-    border-radius: var(--br-8xs);
-    background-color: var(--white-500);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: var(--padding-base) var(--padding-5xs);
-    box-sizing: border-box;
-    z-index: 2;
-  }
   .header-title,
   .header-sub-title {
     align-self: stretch;
@@ -1106,46 +1058,13 @@
     padding: var(--padding-11xs) 0 0;
     gap: var(--gap-11xs);
   }
-  .label4,
-  .text9 {
-    font-family: var(--body-1-regular);
-    position: relative;
-    color: var(--dark-500);
-    text-align: left;
-  }
-  .label4 {
-    align-self: stretch;
-    font-size: var(--caption-regular-size);
-    line-height: 20px;
-  }
-  .text9 {
-    width: 100%;
-    border: 0;
-    outline: 0;
-    font-size: var(--body-1-regular-size);
-    background-color: transparent;
-    height: 30px;
-    flex: 1;
-    line-height: 30px;
-    display: inline-block;
-    min-width: 209px;
-    max-width: 100%;
-    padding: 0;
-  }
-  .input10,
-  .textbox3 {
+  .input10 {
     align-self: stretch;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     box-sizing: border-box;
     max-width: 100%;
-  }
-  .textbox3 {
-    border-radius: var(--br-3xs);
-    border: 1px solid var(--primary-500);
-    flex-direction: row;
-    padding: var(--padding-smi) var(--padding-mini);
   }
   .input10 {
     flex-direction: column;
@@ -1432,7 +1351,6 @@
     gap: var(--gap-3xs);
   }
   .button-container,
-  .login2,
   .login-form {
     display: flex;
     flex-direction: column;
@@ -1443,7 +1361,6 @@
     align-items: flex-start;
     gap: var(--gap-3xs);
   }
-  .login2,
   .login-form {
     overflow: hidden;
     box-sizing: border-box;
@@ -1462,38 +1379,16 @@
     max-width: 100%;
     z-index: 55;
   }
-  .login2 {
-    width: 100%;
-    position: relative;
-    align-items: flex-end;
-    padding: 153px var(--padding-491xl);
-    gap: var(--gap-3xs);
-    background-image: url(./public/image-60@2x.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    letter-spacing: normal;
-  }
   @media screen and (max-width: 750px) {
     .header-title {
       font-size: var(--header-5-bold-size);
       line-height: 34px;
-    }
-    .login2 {
-      padding-left: var(--padding-236xl);
-      padding-right: var(--padding-236xl);
-      box-sizing: border-box;
     }
   }
   @media screen and (max-width: 450px) {
     .header-title {
       font-size: var(--header-7-bold-size);
       line-height: 25px;
-    }
-    .login2 {
-      padding-left: var(--padding-xl);
-      padding-right: var(--padding-xl);
-      box-sizing: border-box;
     }
   }
 .login-conteiner,
