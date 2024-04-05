@@ -69,7 +69,7 @@
                   <b class="b">2</b>
                 </div>
               </div>
-              <button class="login-button" onclick="openLogIn()">Login</button>
+              <a href="#login" class="login-button">Login</a>
               <script src="../js/product.js"></script>
             </div>
           </div>
@@ -1074,6 +1074,7 @@
         </div>
       </div>
       <div id="login" class="login-conteiner">
+        <a href="#"><img class="close-button" src="../src/close Button.svg" alt=""></a>
         <form class="login-form">
           <div class="login-header">
             <h2 class="header-title">Welcome 👋</h2>
@@ -1117,7 +1118,7 @@
               <div class="button36">Login</div>
             </button>
             <button class="button37">
-              <div class="button38">Register</div>
+              <a href="#register" class="button38">Register</a>
             </button>
           </div>
           <div class="frame-parent39">
@@ -1147,6 +1148,7 @@
       </div>
 
       <div id="register" class="register-conteiner">
+        <a href="#"><img class="close-button" src="../src/close Button.svg" alt=""></a>
         <form class="login-form">
           <div class="login-header">
             <h2 class="header-title">Create New Account</h2>
@@ -1197,7 +1199,7 @@
           </div>
           <div class="button-group">
             <button class="button35">
-              <div class="button36">Register</div>
+              <a href="#otp" class="button36">Register</a>
             </button>
           </div>
           <div class="frame-parent39">
@@ -1223,6 +1225,47 @@
               <div class="button42">Login with Apple</div>
             </button>
           </div>
+        </form>
+      </div>
+      <div id="otp" class="otp-conteiner">
+        <a href="#"><img class="close-button" src="../src/close Button.svg" alt=""></a>
+        <form class="login-form">
+          <div class="login-header">
+            <h2 class="header-title">Enter OTP</h2>
+            <div class="header-sub-title">We have share a code of your registered email 
+              address kristin.watson@example.com</div>
+          </div>
+          <div class="otp-input-conteiner">
+              <input class="otp-input" type="text" placeholder="3" inputmode="numeric" maxlength="1">
+              <input class="otp-input" type="text" placeholder="1" inputmode="numeric" maxlength="1">
+              <input class="otp-input" type="text" inputmode="numeric" maxlength="1">
+              <input class="otp-input" type="text" inputmode="numeric" maxlength="1">
+              <input class="otp-input" type="text" inputmode="numeric" maxlength="1">
+          </div>
+          <div class="button-group">
+            <button class="button35">
+              <a href="#password-changed" class="button36">Send OTP</a>
+            </button>
+          </div>
+
+        </form>
+      </div>
+      <div id="password-changed" class="password-changed-conteiner">
+        <form class="login-form">
+          <div class="password-header">
+            <img class="lock-icon" src="../src/Lock icon.svg" alt="">
+            <h2 class="password-header-title">Password Changed
+              Successfully</h2>
+            <div class="password-header-sub-title">Your password has been updated</div>
+            <div class="password-header-sub-title">Successfully</div>
+          </div>
+
+          <div class="button-group">
+            <button class="button35">
+              <a href="#" class="button36">Back to Login</a>
+            </button>
+          </div>
+
         </form>
       </div>
     </div>

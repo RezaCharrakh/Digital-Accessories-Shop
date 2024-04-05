@@ -27,11 +27,13 @@ function openTab(evt, tabName) {
 function openNav() {
   document.getElementById("side-bar-cart").style.width = "352px";
   document.getElementById("side-bar-cart").style.padding = "20px";
+  document.getElementById("aaa").style.backgroundColor = "rgba(0,0,0,0.5)";
 }
 
 function closeNav() {
   document.getElementById("side-bar-cart").style.width = "0";
   document.getElementById("side-bar-cart").style.padding = "0";
+  document.getElementById("aaa").style.backgroundColor = "unset";
 }
 
 function openlogIn() {

@@ -1,4 +1,8 @@
 
+* {
+  font-size: 100%;
+  font-family: Montserrat;
+ }
   .logo-text {
     /* position: absolute; */
  
@@ -433,6 +437,10 @@
     text-align: left;
     font-size: var(--body-1-regular-size);
   }
+  .login-button:hover{
+    cursor: pointer;
+    background-color: #4B84CC;
+  }
   .right-items-header {
     /* position: absolute; */
     top: 20px;
@@ -517,6 +525,12 @@
     gap: var(--gap-3xs);
     font-size: var(--body-1-regular-size);
     color: var(--white-500);
+    border: 0;
+    font-family: Montserrat;
+  }
+  .shop-now-button:hover{
+    cursor: pointer;
+    background-color: #4B84CC;
   }
   .hero-section-text-container {
     position: absolute;
@@ -1235,7 +1249,7 @@
     justify-content: center;
   }
   .button35:hover {
-    background-color: var(--color-steelblue);
+    background-color: #4B84CC;
   }
   .button38 {
     position: relative;
@@ -1255,7 +1269,7 @@
   }
   .button37 {
     cursor: pointer;
-    border: 1px solid var(--primary-500);
+    border: 1.3px solid var(--primary-500);
     padding: var(--padding-smi) var(--padding-xl);
     background-color: transparent;
     border-radius: var(--br-3xs);
@@ -1263,9 +1277,10 @@
     justify-content: center;
   }
   .button37:hover {
-    background-color: rgba(66, 117, 181, 0.09);
-    border: 1px solid var(--color-steelblue);
+    background-color: rgba(54, 123, 208, 0.231);
+    border: 1.3px solid var(--color-steelblue);
     box-sizing: border-box;
+    
   }
   .button-group {
     flex-direction: column;
@@ -1375,6 +1390,26 @@
     padding: var(--padding-10xs) 0 0;
     box-sizing: border-box;
   }
+  .otp-input{
+    height: 60px;
+    width: 60px;
+    border-radius: var(--br-3xs);
+    border: solid 1.75px #1c4e8e;
+    margin: 5px;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .otp-input-conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
   .button42 {
     position: relative;
     font-size: var(--body-1-regular-size);
@@ -1416,7 +1451,7 @@
   .login-form {
     margin: 0;
     width: 420px;
-    min-height: 674px;
+    min-height: 309px;
     border-radius: 16px;
     background-color: var(--white-500);
     box-shadow: var(--ds-2);
@@ -1462,7 +1497,9 @@
     }
   }
 .login-conteiner,
-.register-conteiner{
+.register-conteiner,
+.otp-conteiner,
+.password-changed-conteiner{
   position: fixed;
   top: 0;
   right: 0;
@@ -1471,7 +1508,7 @@
   z-index: 1000;
   background-color: rgba(0,0,0,0.5);
   display: flex;
-  opacity: 1;
+  opacity: 0;
   pointer-events: none;
   transition: opacity 250ms ease;
   display: flex;
@@ -1479,12 +1516,57 @@
   align-items: center;
   flex-direction: column;
 }  
-.visible{
+
+.login-conteiner:target{
   opacity: 1;
   pointer-events: all;
+} 
+.otp-conteiner:target{
+  opacity: 1;
+  pointer-events: all;
+} 
+.register-conteiner:target{
+  opacity: 1;
+  pointer-events: all;
+} 
+.password-changed-conteiner:target{
+  opacity: 1;
+  pointer-events: all;
+} 
+.password-header-title{
+  align-self: stretch;
+  position: relative;
+  font-family: var(--body-1-regular);
+  margin: 0;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  color: var(--dark-500);
+  text-align: center;
+  margin-bottom: 10px;
 }
-/* .login-conteiner:target{
-  opacity: 1;
-  pointer-events: all;
-}  */
+.lock-icon{
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+.password-header{
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   
+}
+.password-header-sub-title{
+  font-size: 16px;
+  line-height: 30px;
+  color: black;
+  text-align: center;
+  margin-bottom: -5px;
+}
+.close-button{
+  margin-left: 388px;
+  margin-bottom: 10px;
+}
+a{
+  text-decoration: none;
+}
