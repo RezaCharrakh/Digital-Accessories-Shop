@@ -1042,6 +1042,11 @@
   gap: var(--gap-11xl);
   max-width: 100%;
 }
+.more-details-header button.active {
+  color: var(--primary-500);
+  font-weight: bold;
+  border-bottom: 3px solid;
+}
 .data-merger-child {
   position: absolute;
   top: 1px;
