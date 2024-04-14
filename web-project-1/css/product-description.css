@@ -627,7 +627,7 @@
   justify-content: flex-start;
   gap: var(--gap-5xs);
 }
-.alignment-aligners {
+.product-price {
   position: relative;
   font-size: var(--header-6-bold-size);
   line-height: 30px;
@@ -709,35 +709,46 @@
   line-height: 30px;
   display: inline-block;
 }
-.value-subtractor,
-.value-subtractor1,
-.value-subtractor2,
-.value-subtractor3 {
+
+.product-color-size{
   height: 36px;
   width: 36px;
+}
+.product-color-border{
+  border: solid 0px;
+}
+.product-color{
+  background-color: var(--gray-iphone);
   position: relative;
   border-radius: var(--br-9xs);
-  background-color: var(--color-silver);
+  cursor: pointer;
+  height: 36px;
+  width: 36px;
 }
-.value-subtractor1,
-.value-subtractor2,
-.value-subtractor3 {
+.product-color1 {
   background-color: var(--color-option-color-option-4);
+  position: relative;
+  border-radius: var(--br-9xs);
+  cursor: pointer;
 }
-.value-subtractor2,
-.value-subtractor3 {
+.product-color2 {
   background-color: var(--dark-500);
+  position: relative;
+  border-radius: var(--br-9xs);
+  cursor: pointer;
 }
-.value-subtractor3 {
+.product-color3 {
   background-color: var(--color-option-color-option-3);
+  position: relative;
+  border-radius: var(--br-9xs);
+  cursor: pointer;
+  border: solid 0px;
 }
-.value-subtractor{
-    background-color: var(--gray-iphone);
-}
+
 .function-sequencer {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   gap: var(--gap-3xs);
 }
@@ -2573,7 +2584,7 @@ body{
     font-size: var(--header-7-bold-size);
     line-height: 25px;
   }
-  .alignment-aligners {
+  .product-price {
     font-size: var(--body-1-regular-size);
     line-height: 24px;
   }

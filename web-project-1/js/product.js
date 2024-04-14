@@ -40,3 +40,68 @@ function openlogIn() {
   document.getElementById("login-conteiner").style.opacity = "1";
   document.getElementById("login-conteiner").style.pointerEvents = "all";
 }
+
+function changeColor(color1){
+  let elements = document.getElementsByClassName("product-color-size")
+
+  switch (color1.className) {
+    case "product-color product-color-size product-color-border":
+      document.getElementById("product-price-id").innerHTML = "$1999.00"
+
+      for (let i = 0; i < elements.length; i++) {
+        elements[i].style.width = "36px";
+        elements[i].style.height = "36px";
+        elements[i].style.border = "solid 0px";
+      }
+
+      document.getElementsByClassName("product-color")[0].style.width = "40px";
+      document.getElementsByClassName("product-color")[0].style.height = "40px";
+      document.getElementsByClassName("product-color")[0].style.border = "solid 2px";
+      break;
+
+      case "product-color1 product-color-size product-color-border":
+      document.getElementById("product-price-id").innerHTML = "$1700.00"
+
+      for (let i = 0; i < elements.length; i++) {
+        elements[i].style.width = "36px";
+        elements[i].style.height = "36px";
+        elements[i].style.border = "solid 0px";
+      }
+
+      document.getElementsByClassName("product-color1")[0].style.width = "40px";
+      document.getElementsByClassName("product-color1")[0].style.height = "40px";
+      document.getElementsByClassName("product-color1")[0].style.border = "solid 2px";
+      break;
+
+      case "product-color2 product-color-size product-color-border":
+      document.getElementById("product-price-id").innerHTML = "$1850.00"
+
+      for (let i = 0; i < elements.length; i++) {
+        elements[i].style.width = "36px";
+        elements[i].style.height = "36px";
+        elements[i].style.border = "solid 0px";
+      }
+
+      document.getElementsByClassName("product-color2")[0].style.width = "40px";
+      document.getElementsByClassName("product-color2")[0].style.height = "40px";
+      document.getElementsByClassName("product-color2")[0].style.border = "solid 2px";
+      break;
+
+      case "product-color3 product-color-size product-color-border":
+      document.getElementById("product-price-id").innerHTML = "$1500.00"
+
+      for (let i = 0; i < elements.length; i++) {
+        elements[i].style.width = "36px";
+        elements[i].style.height = "36px";
+        elements[i].style.border = "solid 0px";
+      }
+
+      document.getElementsByClassName("product-color3")[0].style.width = "40px";
+      document.getElementsByClassName("product-color3")[0].style.height = "40px";
+      document.getElementsByClassName("product-color3")[0].style.border = "solid 2px";
+      break;
+
+    default:
+      break;
+  }
+}
