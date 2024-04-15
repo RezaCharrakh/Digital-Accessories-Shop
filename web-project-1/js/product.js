@@ -105,3 +105,8 @@ function changeColor(color1){
       break;
   }
 }
+
+function addItemToCart() {
+  let cartNumber = document.getElementsByClassName("item-numbers-cart")[0].innerHTML;
+  document.getElementsByClassName("item-numbers-cart")[0].innerHTML = parseInt(cartNumber) + 1;
+}
