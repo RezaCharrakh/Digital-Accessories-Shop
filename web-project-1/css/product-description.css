@@ -2408,16 +2408,19 @@ body{
 .trash-icon{
   margin-left: 85px;
   margin-top: 50px;
+  cursor: pointer;
 }
 .trash-icon2{
   margin-left: 105px;
   margin-top: 50px;
+  cursor: pointer;
 }
 .side-bar-cart-footer-conteiner{
-  display: flex;
+  position: fixed;
   flex-direction: column;
-  margin-top: 400px;
+  bottom: 15px;
   gap: 10px;
+  justify-content: end;
 }
 .side-bar-cart-price-conteiner{
   display: flex;
@@ -2436,6 +2439,7 @@ body{
   border: 0;
   font-size: var(--body-1-bold-size);
   cursor: pointer;
+  margin-bottom: 10px;
 }
 .view-cart-button{
   background-color: var(--gray-gray-20);

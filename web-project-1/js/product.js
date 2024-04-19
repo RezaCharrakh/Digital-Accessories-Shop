@@ -110,3 +110,7 @@ function addItemToCart() {
   let cartNumber = document.getElementsByClassName("item-numbers-cart")[0].innerHTML;
   document.getElementsByClassName("item-numbers-cart")[0].innerHTML = parseInt(cartNumber) + 1;
 }
+
+function removeItem(item) {
+  document.getElementById(item).style.display = "none";
+}
