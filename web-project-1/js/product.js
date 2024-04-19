@@ -113,4 +113,6 @@ function addItemToCart() {
 
 function removeItem(item) {
   document.getElementById(item).style.display = "none";
+  let cartNumber = document.getElementById("item-numbers-cart-side-bar").innerHTML;
+  document.getElementById("item-numbers-cart-side-bar").innerHTML = parseInt(cartNumber) - 1;
 }
