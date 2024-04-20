@@ -116,3 +116,7 @@ function removeItem(item) {
   let cartNumber = document.getElementById("item-numbers-cart-side-bar").innerHTML;
   document.getElementById("item-numbers-cart-side-bar").innerHTML = parseInt(cartNumber) - 1;
 }
+
+function logRating(rate) {
+  console.log(`your rating is ${rate}!`)
+}
