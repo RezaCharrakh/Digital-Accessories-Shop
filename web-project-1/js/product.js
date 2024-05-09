@@ -120,3 +120,7 @@ function removeItem(item) {
 function logRating(rate) {
   console.log(`your rating is ${rate}!`)
 }
+
+function changeSize(){
+  
+}
