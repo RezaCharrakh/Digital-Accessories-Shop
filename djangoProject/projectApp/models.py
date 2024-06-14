@@ -1,7 +1,8 @@
 # models.py
 
 from django.db import models
-from django.contrib.auth.models import User
+# from django.contrib.auth.models import User
+# from ..users.models import User
 
 
 class Category(models.Model):
@@ -58,8 +59,14 @@ class PriceHistory(models.Model):
         return f"{self.product} - {self.price} ({self.timestamp})"
 
 
+class UserModel(models.Model):
+    username = models.CharField(max_length=100)
+    email = models.EmailField(unique=True)
+    password = models.CharField(max_length=128)
+
+
 class Cart(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(UserModel, on_delete=models.CASCADE)
     products = models.ManyToManyField('Product', related_name='carts')
     quantity = models.PositiveIntegerField(default=1)
     price = models.DecimalField(max_digits=10, decimal_places=2)
@@ -68,4 +75,7 @@ class Cart(models.Model):
         return f"Cart for {self.user}"
 
 
+
+
+# Create your models here.
 

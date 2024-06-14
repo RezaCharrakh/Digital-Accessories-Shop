@@ -1,0 +1,1082 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Electro</title>
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{% static "css/global.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/product-description.css" %}"/>
+
+    <link
+      rel="stylesheet"
+      href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'
+    />
+  </head>
+  <body>
+
+
+    <div id="aaa" class="dark-background"></div>
+    <div class="product-detail-descriptions">
+      <div id="side-bar-cart" class="side-bar-cart-conteiner">
+
+        <div class="side-bar-cart-title-group">
+          <div class="side-bar-cart-title">You have 
+            <span id="item-numbers-cart-side-bar" class="side-bar-cart-number">2</span><span class="side-bar-cart-number"> items</span>
+             in your cart
+           </div>
+        </div>
+          
+        <div class="item-in-cart-conteiner">
+          <div class="item-in-cart-parent">
+          <div id="item1" class="item-in-cart-group">
+              <img class="item-picture" src="{% static "src/iPhone%2014%20pro-cart.svg" %}"/>
+              <div class="item-details">
+                <div class="item-title">Apple iPhone 14 Pro</div>
+                <div class="item-price">$1999.00</div>
+                <div class="item-QTY">QTY: 1</div>
+              </div>
+              <img onclick="removeItem('item1')" class="trash-icon" src="{% static "src/trash.svg" %}">
+          </div>
+          <div id="item2" class="item-in-cart-group">
+            <img class="item-picture" src="{% static "src/Asus%20ROG%20delta%20S-cart.svg" %}"/>
+            <div class="item-details">
+              <div class="item-title">Asus ROG Delta S</div>
+              <div class="item-price">$250.00</div>
+              <div class="item-QTY">QTY: 1</div>
+            </div>
+            <img onclick="removeItem('item2')" class="trash-icon2" src="{% static "src/trash.svg" %}">
+          </div>
+        </div>
+  
+        <div class="side-bar-cart-footer-conteiner">
+            <div class="side-bar-cart-footer-group">
+              <div class="side-bar-cart-price-conteiner">
+                  <div class="side-bar-total-price">Subtotal</div>
+                  <div class="side-bar-total-price-num">$2249.00</div>
+              </div>
+            </div>
+            <button class="view-cart-button">View Cart</button>
+            <button class="checkout-button" onclick="closeNav()">Checkout</button>
+        </div>
+      </div>
+      
+      </div>
+      <header class="header2">
+        <img class="logo-icon2" alt="" src="{% static "src/logo@2x.png" %}" />
+
+        <form class="parent-link-parent">
+          <div class="parent-link">
+            <div class="logo-text-wrapper">
+              <img
+                class="logo-text4"
+                loading="lazy"
+                alt=""
+                src="{% static "src/logo--text.svg" %}"
+              />
+            </div>
+            <div class="siblings-sum">
+              <div class="input14">
+                <div class="multi-trunk">
+                  <div class="text13">All</div>
+                  <img class="icon8" alt="" src="{% static "src/icon%5E.svg" %}" />
+                </div>
+              </div>
+              <div class="input15">
+                <div class="subtree-root">
+                  <img class="icon9" alt="" src="{% static "src/-icon.svg" %}" />
+                  <input class="text14" placeholder="Search" type="text" />
+                </div>
+              </div>
+              <button class="search-button">
+                Search
+              </button>
+            </div>
+          </div>
+          <div class="sibling-set">
+            <div class="input16">
+              <div class="leaf-connection">
+                <div class="family-branch">
+                  <img class="icon10" alt="" src="{% static "src/🔽%20Icon.png" %}" />
+                </div>
+                <div class="text15">All Categories</div>
+                <div class="family-branch1">
+                  <img class="icon11" alt="" src="{% static "src/icon%5E.svg" %}" />
+                </div>
+              </div>
+            </div>
+            <div class="ancestry-link">
+              <div class="sibling-link">
+                <div class="home3">Home</div>
+                <div class="leaf-network">
+                  <div class="shop3">Shop</div>
+                  <div class="huge-iconarrowsoutlinedirec-container">
+                    <img
+                      class="huge-iconarrowsoutlinedirec2"
+                      alt=""
+                      src="{% static "src/hugeiconarrowsoutlinedirectiondown-01.svg" %}"
+                    />
+                  </div>
+                </div>
+                <div class="about-us4">About Us</div>
+                <div class="blog2">Blog</div>
+                <div class="contact-us2">Contact Us</div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="branching-set-parent">
+          <div class="branching-set">
+            <div class="family-segment">
+              <img
+                class="huge-iconinterfacesolidsear7"
+                alt=""
+                src="{% static "src/-icon.svg" %}"
+              />
+
+              <img
+                class="huge-iconinterfacesolidsear8"
+                alt=""
+                src="{% static "src/hugeiconinterfacesolidsearch-3.svg" %}"
+              />
+
+              <div onclick="openNav()"  class="cart-logo">
+                <img
+                  class="huge-iconinterfacesolidsear9"
+                  alt=""
+                  src="{% static "src/hugeiconinterfacesolidsearch-4.svg" %}"
+                />
+
+                <div class="cart-item2">
+                  <div class="sibling-branch"></div>   
+                  <b class="item-numbers-cart">2</b>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="button55 button56">
+            Login
+          </button>
+        </div>
+      </header>
+      <main class="parent-complex">
+        <section class="descendant-segment">
+          <div class="leaf-family">
+            <div class="branching-network">
+              <div class="generational-link">
+                <div class="ancestral-tree">
+                  <div class="home4">Home</div>
+                  <div class="sibling-connection">
+                    <img
+                      class="huge-iconarrowssoliddirecti2"
+                      alt=""
+                      src="{% static "src/hugeiconarrowssoliddirectionright-01.svg" %}"
+                    />
+                  </div>
+                  <div class="shop4">Shop</div>
+                  <div class="sibling-connection1">
+                    <img
+                      class="huge-iconarrowssoliddirecti3"
+                      alt=""
+                      src="{% static "src/hugeiconarrowssoliddirectionright-01.svg" %}"
+                    />
+                  </div>
+                  <div class="apple-iphone-145">Apple iPhone 14 Pro</div>
+                </div>
+                <div class="family-link-set">
+                  <div class="data-aggregator">
+                    <div class="data-aggregator-child"></div>
+                    <img
+                      class="image-16-icon2"
+                      loading="lazy"
+                      alt=""
+                      src="{% static "src/iphone14pro.png" %}"
+                    />
+                  </div>
+                  <div class="shape-assembler">
+                    <div class="sub-pic-background">
+                   
+                      <img
+                        loading="lazy"
+                        alt=""
+                        src="{% static "src/iphone-koochooloo.svg" %}"
+                      />
+                    </div>
+                    <div class="sub-pic-background">
+                      
+                      <img
+                        loading="lazy"
+                        alt=""
+                        src="{% static "src/iphone-koochooloo.svg" %}"
+                      />
+                    </div>
+                    <div class="sub-pic-background">
+                    
+                      <img
+                        loading="lazy"
+                        alt=""
+                        src="{% static "src/iphone-koochooloo.svg" %}"
+                      />
+                    </div>
+                    <div class="sub-pic-background">
+                      
+                      <img
+                        loading="lazy"
+                        alt=""
+                        src="{% static "src/iphone-koochooloo.svg" %}"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="color-palette">
+                <div class="size-adjustor">
+                  <div class="alignment-aligner">
+                    <div class="image-compressor">
+                      <h2 class="apple-iphone-146">Apple iPhone 14 Pro</h2>
+                      <div class="data-divider">
+                        <div class="shape-splitter-parent">
+                          <div class="shape-splitter">
+                            <div class="function-modifier">
+                              <img
+                                class="huge-iconinterfacesolidstar110"
+                                loading="lazy"
+                                alt=""
+                                src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                              />
+
+                              <img
+                                class="huge-iconinterfacesolidstar111"
+                                alt=""
+                                src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                              />
+
+                              <img
+                                class="huge-iconinterfacesolidstar112"
+                                alt=""
+                                src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                              />
+
+                              <img
+                                class="huge-iconinterfacesolidstar113"
+                                alt=""
+                                src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                              />
+
+                              <img
+                                class="huge-iconinterfacesolidstar114"
+                                alt=""
+                                src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews2">5.0 (121 Reviews)</div>
+                        </div>
+                        <div id="product-price-id" class="product-price">$1999.00</div>
+                      </div>
+                    </div>
+                    <button class="button57">
+                      <div class="button58">In Stock</div>
+                    </button>
+                  </div>
+                  <div class="alignment-system">
+                    <div class="it-is-a3">
+                      It is a long established fact that a reader will be
+                      distracted by the readable content of a page when looking
+                      at its layout. The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution.
+                    </div>
+                  </div>
+                  <div class="data-sorter4">
+                    <b class="color1">Color</b>
+                    <div class="shape-maker">
+                      <div class="function-sequencer">
+                        <div onclick="changeColor(this)" class="product-color product-color-size product-color-border"></div>
+                        <div onclick="changeColor(this)" class="product-color1 product-color-size product-color-border"></div>
+                        <div onclick="changeColor(this)" class="product-color2 product-color-size product-color-border"></div>
+                        <div onclick="changeColor(this)" class="product-color3 product-color-size product-color-border"></div>
+                      </div>
+                      <div class="color-contrast">
+                        <div class="alignment-align-all">
+                          <div class="image-cropper">
+                            <div class="image-cropper-child"></div>
+                            <img
+                              class="huge-iconinterfacesolidminu1"
+                              loading="lazy"
+                              alt=""
+                              src="{% static "src/hugeiconinterfacesolidminus.svg" %}"
+                            />
+                          </div>
+                          <div class="image-cropper1">
+                            
+                            <div class="div35">1</div>
+                          </div>
+                          <div class="image-cropper2">
+                            <div class="image-cropper-inner"></div>
+                            <img
+                              class="huge-iconinterfacesolidplus1"
+                              loading="lazy"
+                              alt=""
+                              src="{% static "src/hugeiconinterfacesolidplus.svg" %}"
+                            />
+                          </div>
+                        </div>
+                        <button class="button59" onclick="addItemToCart()">
+                          <div class="add-to-cart-button">Add to Cart</div>
+                          <img
+                            class="huge-iconarrowssolidarrow-r9"
+                            alt=""
+                            src="{% static "src/hugeiconarrowssolidarrowright.svg" %}"
+                          />
+                        </button>
+                        <button class="button61">
+                          <img
+                            class="huge-iconhealthoutlineheart1"
+                            alt=""
+                            src="{% static "src/hugeiconhealthoutlineheart.svg" %}"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="share2">
+                    <b class="share3">Share</b>
+                    <div class="link-connector">
+                      <div class="button62">
+                        <img
+                          class="huge-iconsocialsolidfaceboo3"
+                          loading="lazy"
+                          alt=""
+                          src="{% static "src/facebook.svg" %}"
+                        />
+                      </div>
+                      <div class="button63">
+                        <img
+                          class="huge-iconsocialsolidtwitter3"
+                          loading="lazy"
+                          alt=""
+                          src="{% static "src/twitter.svg" %}"
+                        />
+                      </div>
+                      <div class="button64">
+                        <img
+                          class="huge-iconsocialsolidinstagr3"
+                          loading="lazy"
+                          alt=""
+                          src="{% static "src/instagram.svg" %}"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="more-details-container">
+              <div class="more-details-header-parent">
+                <div class="more-details-header">
+                  <button class="more-details-button" onclick="openTab(event, 'description-text-container')">Descriptions</button>
+                  <button class="more-details-button" onclick="openTab(event, 'information-text-container')">Additional Information</button>
+                  <button class="more-details-button" onclick="openTab(event, 'reviews-text-conteiner')">Reviews</button>
+                </div>
+                <div class="data-merger">
+                  <div class="data-merger-child"></div>
+                </div>
+              </div>
+              <div id="description-text-container" class="tab-content">
+                <p class="description-text">
+                  t is a long established fact that a reader will be distracted
+                   by the readable content of a page when looking at its layout.
+                    The point of using Lorem Ipsum is that it has a more-or-less
+                     normal distribution of letters, as opposed to using
+                      'Content here, content here', making it look like readable English.
+                       Many desktop publishing packages and web page editors now use Lorem Ipsum
+                        as their default model text, and a search for 'lorem ipsum' will uncover
+                         many web sites still in their infancy.
+                </p>
+                <p class="blank-line">&nbsp;</p>
+                <p class="description-text2">
+                  Various versions have evolved over the years, sometimes by
+                  accident, sometimes on purpose (injected humour and the like).
+                </p>
+              </div>
+              <div id="information-text-container" class="tab-content">
+                <table class="information-table">
+                  <tr>
+                    <th>Brand</th>
+                    <td>Apple</td>
+                  </tr>
+                  <tr>
+                    <th>Item Height</th>
+                    <td>65 CM</td>
+                  </tr>
+                  <tr>
+                    <th>Item width</th>
+                    <td>31.4 CM</td>
+                  </tr>
+                  <tr>
+                    <th>Screen Size</th>
+                    <td>6.5 Inch</td>
+                  </tr>
+                  <tr>
+                    <th>Model Number</th>
+                    <td>MF841HN/A</td>
+                  </tr>
+                  <tr>
+                    <th>RAM Size</th>
+                    <td>6 GB</td>
+                  </tr>
+                  <tr>
+                    <th>Operating System</th>
+                    <td>ios 17</td>
+                  </tr>
+                </table>
+              </div>
+              <div id="reviews-text-conteiner" class="tab-content">
+                <form class="review-form">
+                  <div class="review-form-group">
+
+                    <div class="customer-reviews-wrapper">
+                      <b class="customer-reviews">Customer Reviews</b>
+                    </div>
+                    <div class="customer-info-container">
+                      <div class="customer-info-group">
+                        <img
+                          class="customer-profile"
+                          loading="lazy"
+                          alt=""
+                          src="{% static "src/ellipse-956@2x.png" %}"
+                        />
+      
+                        <div class="customer-name-rate-group">
+                          <div class="customer-name">Mark Williams</div>
+                          <div class="customer-rate">
+                            <img
+                              class="star-rate"
+                              alt=""
+                              src="{% static "src/hugeiconinterfacesolidstar-5.svg" %}"
+                            />
+      
+                            <img
+                              class="star-rate"
+                              alt=""
+                              src="{% static "src/hugeiconinterfacesolidstar-5.svg" %}"
+                            />
+      
+                            <img
+                              class="star-rate"
+                              alt=""
+                              src="{% static "src/hugeiconinterfacesolidstar-5.svg" %}"
+                            />
+      
+                            <img
+                              class="star-rate"
+                              alt=""
+                              src="{% static "src/hugeiconinterfacesolidstar-5.svg" %}"
+                            />
+      
+                            <img
+                              class="star-rate"
+                              alt=""
+                              src="{% static "src/hugeiconinterfacesolidstar-5.svg" %}"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <b class="review-title">Excellent Product, I Love It 😍</b>
+                      <div class="review-text">
+                        It is a long established fact that a reader will be distracted
+                        by the readable content of a page when looking at its layout.
+                        The point of using Lorem Ipsum is that it has a more-or-less
+                        normal distribution of letters, as opposed to using 'Content
+                        here, content here', making it look like readable English.
+                      </div>
+                    <div class="review-by-electro-posted-on-se-parent">
+                      <div class="review-by-electro-container">
+                        <span class="review-by">Review by </span>
+                        <span class="electro">Electro</span>
+                        <span class="posted-on"> Posted on </span>
+                        <span class="sep-08-2023">Sep 08, 2023</span>
+                      </div>
+                      <div class="value-splitter"></div>
+                    </div>
+                    <div class="customer-info-container">
+                      <div class="customer-info-group">
+                        <img
+                          class="customer-profile"
+                          loading="lazy"
+                          alt=""
+                          src="{% static "src/ellipse-957@2x.png" %}"
+                        />
+      
+                        <div class="customer-name-rate-group">
+                          <div class="customer-name">Alexa Johnson</div>
+                          <div class="customer-rate">
+                            <img
+                              class="star-rate"
+                              alt=""
+                              src="{% static "src/hugeiconinterfacesolidstar-5.svg" %}"
+                            />
+      
+                            <img
+                              class="star-rate"
+                              alt=""
+                              src="{% static "src/hugeiconinterfacesolidstar-5.svg" %}"
+                            />
+      
+                            <img
+                              class="star-rate"
+                              alt=""
+                              src="{% static "src/hugeiconinterfacesolidstar-5.svg" %}"
+                            />
+      
+                            <img
+                              class="star-rate"
+                              alt=""
+                              src="{% static "src/hugeiconinterfacesolidstar-5.svg" %}"
+                            />
+      
+                            <img
+                              class="star-rate"
+                              alt=""
+                              src="{% static "src/hugeiconinterfacesolidstar-5.svg" %}"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <b class="review-title"
+                      >My Brother is very much happy with this iPhone</b
+                    >
+                    
+                      <div class="review-text">
+                        It is a long established fact that a reader will be distracted
+                        by the readable content of a page when looking at its layout.
+                        The point of using Lorem Ipsum is that it has a more-or-less
+                        normal distribution of letters, as opposed to using 'Content
+                        here, content here', making it look like readable English.
+                      </div>
+                   
+                    <div class="review-by-electro-posted-on-se-group">
+                      <div class="review-by-electro-container1">
+                        <span class="review-by1">Review by </span>
+                        <span class="electro1">Electro</span>
+                        <span class="posted-on1"> Posted on </span>
+                        <span class="sep-08-20231">Sep 08, 2023</span>
+                      </div>
+                      <div class="frame-child17"></div>
+                    </div>
+                  
+                  <div class="add-review-container">
+                    <b class="add-your-review">Add your Review</b>
+                    <div class="add-review-group">
+                      <div class="your-rating">Your Rating</div>
+                      <div class="user-input">
+
+                        <div class="star-box">
+                          <div onclick="logRating(1)" class="star-group">
+                            <img
+                          class="star-rating"
+                          alt=""
+                          src="{% static "src/hugeiconinterfacesolidstar-15.svg" %}"
+                            />
+                          </div>
+                          
+    
+                          <div class="frame-child18"></div>
+
+                          <div onclick="logRating(2)" class="star-group">
+                            <img
+                            class="star-rating"
+                            alt=""
+                            src="{% static "src/hugeiconinterfacesolidstar-15.svg" %}"
+                          />
+                          <img
+                            class="star-rating"
+                            alt=""
+                            src="{% static "src/hugeiconinterfacesolidstar-15.svg" %}"
+                          />
+                          </div>
+                          <div class="vertical-line"></div>
+                          <div onclick="logRating(3)" class="star-group">
+                            <img
+                              class="star-rating"
+                              alt=""
+                              src="{% static "src/hugeiconinterfacesolidstar-15.svg" %}"
+                            />
+      
+                            <img
+                              class="star-rating"
+                              alt=""
+                              src="{% static "src/hugeiconinterfacesolidstar-15.svg" %}"
+                            />
+      
+                            <img
+                              class="star-rating"
+                              alt=""
+                              src="{% static "src/hugeiconinterfacesolidstar-15.svg" %}"
+                            />
+                          </div>
+                          <div class="vertical-line"></div>
+                          <div onclick="logRating(4)" class="star-group">
+                            <img
+                              class="star-rating"
+                              alt=""
+                              src="{% static "src/hugeiconinterfacesolidstar-15.svg" %}"
+                            />
+      
+                            <img
+                              class="star-rating"
+                              alt=""
+                              src="{% static "src/hugeiconinterfacesolidstar-15.svg" %}"
+                            />
+      
+                            <img
+                              class="star-rating"
+                              alt=""
+                              src="{% static "src/hugeiconinterfacesolidstar-15.svg" %}"
+                            />
+      
+                            <img
+                              class="star-rating"
+                              alt=""
+                              src="{% static "src/hugeiconinterfacesolidstar-15.svg" %}"
+                            />
+                          </div>
+                          <div class="vertical-line"></div>
+                          <div onclick="logRating(5)" class="star-group">
+                            <img
+                              class="star-rating"
+                              alt=""
+                              src="{% static "src/hugeiconinterfacesolidstar-15.svg" %}"
+                            />
+      
+                            <img
+                              class="star-rating"
+                              alt=""
+                              src="{% static "src/hugeiconinterfacesolidstar-15.svg" %}"
+                            />
+      
+                            <img
+                              class="star-rating"
+                              alt=""
+                              src="{% static "src/hugeiconinterfacesolidstar-15.svg" %}"
+                            />
+      
+                            <img
+                              class="star-rating"
+                              alt=""
+                              src="{% static "src/hugeiconinterfacesolidstar-15.svg" %}"
+                            />
+      
+                            <img
+                              class="star-rating"
+                              alt=""
+                              src="{% static "src/hugeiconinterfacesolidstar-15.svg" %}"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-container">
+                      <div class="input-title">Name</div>
+                      <div class="input-text-conteiner">
+                        <input
+                          class="input-text"
+                          placeholder="Enter Your Name"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                    <div class="input-container">
+                      <div class="input-title">Email Address</div>
+                      <div class="input-text-conteiner">
+                        <input
+                          class="input-text"
+                          placeholder="Enter Your Email"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                    <div class="input-container">
+                      <div class="input-title">Your Review</div>
+                      
+                        <textarea class="input-textarea-review" placeholder="Enter Your Review"></textarea>
+                        
+                      
+                    </div>
+                  </div>
+                  <button class="button53">Submit</button>
+                  </div>
+                </form>
+              </div>
+
+              <script src="{% static "js/product.js"%}"></script>
+              <!-- to do -->
+            </div>
+          </div>
+          <div class="function-chain">
+            <h1 class="related-products1">Related Products</h1>
+            <div class="data-aggregator1">
+              <div class="condition-splitter">
+                <div class="rectangle-parent8">
+                  
+                  <img
+                    class="image-22-icon2"
+                    loading="lazy"
+                    alt=""
+                    src="{% static "src/image-22@2x.png" %}"
+                  />
+                </div>
+                <div class="output-collector4">
+                  <div class="error-handler">
+                    <b class="apple-iphone-147">Apple iPhone 14 Plus</b>
+                    <div class="loop-processor">
+                      <img
+                        class="huge-iconinterfacesolidstar115"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar116"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar117"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar118"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar119"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+                    </div>
+                  </div>
+                  <div class="data-sorter5">$850.00</div>
+                </div>
+              </div>
+              <div class="condition-splitter">
+                <div class="rectangle-parent8">
+                  
+                  <img
+                    class="image-22-icon2"
+                    loading="lazy"
+                    alt=""
+                    src="{% static "src/image-26@2x.png" %}"
+                  />
+                </div>
+                <div class="output-collector4">
+                  <div class="xiaomi-fimi-x8-mini-container">
+                    <b class="xiaomi-fimi-x82">Xiaomi Fimi X8 Mini</b>
+                    <div class="huge-iconinterfacesolidstar-parent17">
+                      <img
+                        class="huge-iconinterfacesolidstar120"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar121"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar122"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar123"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar124"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+                    </div>
+                  </div>
+                  <div class="div36">$650.00</div>
+                </div>
+              </div>
+              <div class="condition-splitter">
+                <div class="rectangle-parent8">
+                  
+                  <img
+                    class="image-19-icon4"
+                    alt=""
+                    src="{% static "src/image-19@2x.png" %}"
+                  />
+                </div>
+                <div class="output-collector4">
+                  <div class="apple-ipad-mini-6-wi-fi-container">
+                    <b class="apple-ipad-mini2">Apple iPad Mini 6 Wi-Fi</b>
+                    <div class="huge-iconinterfacesolidstar-parent18">
+                      <img
+                        class="huge-iconinterfacesolidstar125"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar126"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar127"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar128"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar129"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+                    </div>
+                  </div>
+                  <div class="div37">$500.00</div>
+                </div>
+              </div>
+              <div class="condition-splitter">
+                <div class="rectangle-parent8">
+                  <div class="frame-child27"></div>
+                  <img
+                    class="image-25-icon3"
+                    loading="lazy"
+                    alt=""
+                    src="{% static "src/image-25@2x.png" %}"
+                  />
+                </div>
+                <div class="output-collector4">
+                  <div class="asus-rog-delta-s-parent1">
+                    <b class="asus-rog-delta3">Asus ROG Delta S</b>
+                    <div class="huge-iconinterfacesolidstar-parent19">
+                      <img
+                        class="huge-iconinterfacesolidstar130"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar131"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar132"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar133"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar134"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+                    </div>
+                  </div>
+                  <div class="div38">$250.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer2">
+        <div class="logic-tree"></div>
+        <div class="value-tree">
+          <div class="logo-text-group">
+            <img class="logo-electro-footer" alt="" src="{% static "src/Logo%20+%20Text.svg" %}" />
+
+            <div class="call-group">
+              <div class="call2">
+                <div class="huge-iconcommunicationoutlin-container">
+                  <img
+                    class="huge-iconcommunicationoutlin2"
+                    loading="lazy"
+                    alt=""
+                    src="{% static "src/hugeiconcommunicationoutlinecalling.svg" %}"
+                  />
+                </div>
+                <div class="div39">(316) 555-0116</div>
+              </div>
+              <div class="mail4">
+                <div class="huge-iconsocialoutlinegmail-container">
+                  <div class="huge-iconsocialoutlinegmail4">
+                    <div class="huge-iconsocialoutlinegmail-child5"></div>
+                    <img
+                      class="input-port-icon"
+                      alt=""
+                      src="{% static "src/vector-3014.svg" %}"
+                    />
+                  </div>
+                </div>
+                <div class="electroexamplecom2">electro@example.com</div>
+              </div>
+              <div class="address2">
+                <img
+                  class="huge-icondeviceoutlinelocat2"
+                  loading="lazy"
+                  alt=""
+                  src="{% static "src/hugeicondeviceoutlinelocation.svg" %}"
+                />
+
+                <div class="parker-rd-allentown-container2">
+                  <p class="parker-rd-allentown2">4140 Parker Rd. Allentown,</p>
+                  <p class="new-mexico-311342">New Mexico 31134</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="information4">
+            <b class="information5">Information</b>
+            <div class="my-account-container">
+              <div class="my-account2">My Account</div>
+              <div class="login3">Login</div>
+              <div class="my-cart2">My Cart</div>
+              <div class="my-wishlist2">My Wishlist</div>
+              <div class="checkout2">Checkout</div>
+            </div>
+          </div>
+          <div class="service4">
+            <b class="service5">Service</b>
+            <div class="about-us-container">
+              <div class="about-us5">About Us</div>
+              <div class="careers2">Careers</div>
+              <div class="delivery-information2">Delivery Information</div>
+              <div class="privacy-policy2">Privacy Policy</div>
+              <div class="terms-conditions2">Terms & Conditions</div>
+            </div>
+          </div>
+          <div class="subscribe4">
+            <div class="data-port">
+              <b class="subscribe5">Subscribe</b>
+              <div class="enter-your-email2">
+                Enter your email below to be the first to know about new
+                collections.
+              </div>
+            </div>
+            <div class="mail5">
+              <div class="filter-port">
+                <div class="split-port">
+                  <div class="huge-iconsocialoutlinegmail5">
+                    <div class="combine-port"></div>
+                    <img
+                      class="end-port-icon"
+                      alt=""
+                      src="{% static "src/vector-3014.svg" %}"
+                    />
+                  </div>
+                  <div class="your-email2">Your Email</div>
+                </div>
+                <img
+                  class="huge-iconarrowsoutlinearrow2"
+                  alt=""
+                  src="{% static "src/hugeiconarrowsoutlinearrowright@2x.png" %}"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rectangle-parent12">
+          <div class="frame-child28"></div>
+          <div class="color-selector">
+            <div class="size-adjustor1">
+              <div class="payment-methodvisa-group">
+                <img
+                  class="payment-methodvisa-icon2"
+                  loading="lazy"
+                  alt=""
+                  src="{% static "src/payment-methodvisa.svg" %}"
+                />
+
+                <img
+                  class="payment-methodmastercard-icon2"
+                  loading="lazy"
+                  alt=""
+                  src="{% static "src/payment-methodmastercard.svg" %}"
+                />
+
+                <img
+                  class="payment-methodgooglepay-icon2"
+                  loading="lazy"
+                  alt=""
+                  src="{% static "src/payment-methodgooglepay.svg" %}"
+                />
+
+                <img
+                  class="payment-methodamex-icon2"
+                  loading="lazy"
+                  alt=""
+                  src="{% static "src/payment-methodamex.svg" %}"
+                />
+
+                <img
+                  class="payment-methodpaypal-icon2"
+                  loading="lazy"
+                  alt=""
+                  src="{% static "src/payment-methodpaypal.svg" %}"
+                />
+              </div>
+              <div class="electro-all-rights2">
+                ©2023 Electro All Rights are reserved️
+              </div>
+            </div>
+            <div class="icon-setter">
+              <img
+                class="huge-iconsocialsolidfaceboo4"
+                alt=""
+                src="{% static "src/hugeiconsocialsolidfacebook.svg" %}"
+              />
+
+              <img
+                class="huge-iconsocialsolidinstagr4"
+                alt=""
+                src="{% static "src/hugeiconsocialsolidinstagram@2x.png" %}"
+              />
+
+              <img
+                class="huge-iconsocialsolidtwitter4"
+                alt=""
+                src="{% static "src/hugeiconsocialsolidtwitter.svg" %}"
+              />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+  </body>
+  
+</html>

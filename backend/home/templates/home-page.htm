@@ -1,0 +1,1303 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Electro</title>
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{% static 'css/home-page.css'%}?{% now "U" %}" />
+    <link rel="stylesheet" href="{% static "css/global.css" %}"/>
+    <link 
+    rel='stylesheet' 
+    type='text/css' 
+    media='screen' 
+    href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'>
+
+</head>
+<body>
+    <div class="home-page">
+      <div class="hero-section">
+        <div class="hero-section-child"></div>
+        <img class="hero-section-bg" alt="" src="{% static "src/mask-group.svg" %}" />
+
+        <div class="header">
+          <div class="top-header">
+            <img class="electro-logo" alt="" src="{% static "src/logo--text.svg" %}" />
+            <div class="input-parent">
+              <div class="search-drop-down-input">
+                <div class="icon-parent">
+                  <div class="text">All</div>
+                  <img class="arrow-down-icon" alt="" src="{% static "src/icon%5E.svg" %}" />
+                </div>
+              </div>
+              <div class="search-input">
+                <div class="icon-parent">
+                  <img
+                    class="huge-iconcommunicationoutlin"
+                    alt=""
+                    src="{% static "src/search%2002.png" %}"
+                  />
+  
+                  <div class="text">Search</div>
+                </div>
+              </div>
+              <div class="div">
+                <button class="button">Search</button>
+              </div>
+            </div>
+            <div class="right-items-header">
+              <div class="huge-iconinterfacesolidsear-parent">
+                <img
+                  class="huge-iconinterfacesolidsear"
+                  alt=""
+                  src="{% static "src/-icon.svg" %}"
+                />
+  
+                <img
+                  class="huge-iconinterfacesolidsear1"
+                  alt=""
+                  src="{% static "src/hugeiconinterfacesolidsearch-3.svg" %}"
+                />
+  
+                <img
+                  class="huge-iconinterfacesolidsear2"
+                  alt=""
+                  src="{% static "src/hugeiconinterfacesolidsearch-4.svg" %}"
+                />
+  
+                <div class="cart-item">
+                  <div class="cart-item-child"></div>
+                  <b class="b">2</b>
+                </div>
+              </div>
+              <a href="#login" class="login-button">Login</a>
+              <script src="{% static "js/product.js" %}"></script>
+            </div>
+          </div>
+          <div class="bottom-header">
+            <div class="categories-input">
+              <div class="icon-parent">
+                <img
+                  class="huge-iconsocialsolidinstagr"
+                  alt=""
+                  src="{% static "src/-icon@2x.png" %}"
+                />
+  
+                <div class="text">All Categories</div>
+                <img class="arrow-down-icon" alt="" src="{% static "src/icon%5E.svg" %}" />
+              </div>
+            </div>
+  
+  
+            <div class="home-parent">
+              <div class="div">Home</div>
+              <div class="shop-parent">
+                <div class="div">Shop</div>
+                <img
+                  class="huge-iconcommunicationoutlin"
+                  alt=""
+                  src="{% static "src/hugeiconarrowsoutlinedirectiondown-01.svg" %}"
+                />
+              </div>
+              <div class="div">About Us</div>
+              <div class="div">Blog</div>
+              <div class="div">Contact Us</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-section-item"></div>
+
+
+        <img
+          class="young-handsome-happy-smiling-m-icon"
+          alt="{{ headBanner.banner_type }}"
+          src="{{ headBanner.image.url }}"
+        />
+
+
+        <div class="hero-section-text-container">
+          <div class="subscribe-parent">
+            <b class="hero-section-maintext-container">
+              <p class="parker-rd-allentown">{{ headBanner.title }}</p>
+{#              <p class="parker-rd-allentown">With Solo</p>#}
+{#              <p class="parker-rd-allentown">Headphone</p>#}
+            </b>
+            <div class="hero-section-subtext">
+              {{ headBanner.description }}
+            </div>
+          </div>
+          <a href="{{ headBanner.button_link }}" class="shop-now-button">
+            <div class="div">Shop Now</div>
+            <img
+              class="huge-iconcommunicationoutlin"
+              alt=""
+              src="{% static "src/hugeiconarrowssolidarrowright.svg" %}"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="shop-by-categories">
+        <div class="shop-by-catrgories-parent">
+          <b class="shop-by-catrgories">Shop by Catrgories</b>
+          <div class="action">
+            <img class="button-icon" alt="" src="{% static "src/left-arrow-button.png" %}" />
+
+            <img class="button-icon" alt="" src="{% static "src/button@2x.png" %}" />
+          </div>
+        </div>
+        <div class="all-products">
+          <div class="mobile-phones">
+            <div class="ellipse-parent">
+              <div class="group-child"></div>
+              <img class="image-9-icon" alt="" src="{% static "src/image-9@2x.png" %}" />
+            </div>
+            <b class="div">Mobile Phones</b>
+          </div>
+          <div class="mobile-phones">
+            <div class="ellipse-parent">
+              <div class="group-child"></div>
+              <img class="image-9-icon" alt="" src="{% static "src/image-11@2x.png" %}" />
+            </div>
+            <b class="div">Smart TV</b>
+          </div>
+          <div class="mobile-phones">
+            <div class="ellipse-parent">
+              <div class="group-child"></div>
+              <img class="image-9-icon" alt="" src="{% static "src/image-13@2x.png" %}" />
+            </div>
+            <b class="div">Smart Watch</b>
+          </div>
+          <div class="mobile-phones">
+            <div class="ellipse-parent">
+              <div class="group-child"></div>
+              <img class="image-9-icon" alt="" src="{% static "src/image-10@2x.png" %}" />
+            </div>
+            <b class="div">Laptops</b>
+          </div>
+          <div class="mobile-phones">
+            <div class="ellipse-parent">
+              <div class="group-child"></div>
+              <img class="image-9-icon" alt="" src="{% static "src/image-14@2x.png" %}" />
+            </div>
+            <b class="div">Drones</b>
+          </div>
+          <div class="mobile-phones">
+            <div class="ellipse-parent">
+              <div class="group-child"></div>
+              <img class="image-9-icon" alt="" src="{% static "src/image-12@2x.png" %}" />
+            </div>
+            <b class="div">Headphones</b>
+          </div>
+        </div>
+      </div>
+      <div class="ads">
+        <div class="ad-1">
+          <div class="ad-1-child"></div>
+          <img
+            class="mask-group-icon1"
+            alt=""
+            src="{% static "src/image%2015.png" %}"
+          />
+
+          <div class="frame-div">
+            <div class="subscribe-parent">
+              <b class="iphone-14-pro">Mackbook Air M2</b>
+              <div class="you-made-it1">Don’t miss the last opportunity</div>
+            </div>
+            <div class="button6">
+              <div class="div">Shop Now</div>
+              <img
+                class="huge-iconcommunicationoutlin"
+                alt=""
+                src="{% static "src/hugeiconarrowssolidarrowright.svg" %}"
+              />
+            </div>
+          </div>
+          <div class="button8">
+            <div class="button9">50% OFF</div>
+          </div>
+        </div>
+        <div class="ad-1"> 
+          <div class="ad-1-child"></div>
+          <img
+            class="mask-group-icon1"
+            alt=""
+            src="{% static "src/image%2016.png" %}"
+          />
+
+          <div class="frame-div">
+            <div class="subscribe-parent">
+              <b class="iphone-14-pro">Iphone 14 Pro</b>
+              <div class="you-made-it1">Don’t miss the last opportunity</div>
+            </div>
+            <div class="button6">
+              <div class="div">Shop Now</div>
+              <img
+                class="huge-iconcommunicationoutlin"
+                alt=""
+                src="{% static "src/hugeiconarrowssolidarrowright.svg" %}"
+              />
+            </div>
+          </div>
+          <div class="button8">
+            <div class="button9">50% OFF</div>
+          </div>
+        </div>
+      </div>
+      <div class="our-bestseller-products">
+        <div class="shop-by-catrgories-parent">
+          <b class="our-bestseller-products1">Our Bestseller Products</b>
+          <div class="frame-parent2">
+            <div class="new-parent">
+              <div class="div">New</div>
+              <div class="frame-child"></div>
+            </div>
+            <div class="div">Featured</div>
+            <div class="div">Top Rated</div>
+          </div>
+        </div>
+        <div class="parent">
+          <div class="div1">
+            <div class="child"></div>
+            <img
+              class="mask-group-icon3"
+              alt=""
+              src="{% static "src/ipadpro.png" %}"
+            />
+
+            <b class="apple-ipad-pro-container">
+              <p class="parker-rd-allentown">Apple iPad Pro</p>
+              <p class="parker-rd-allentown">Wi-Fi</p>
+            </b>
+            <div class="div2">$1520</div>
+          </div>
+          <div class="frame-parent3">
+            <div class="parent">
+              <div class="div3">
+                <div class="item"></div>
+                <img
+                  class="image-19-icon"
+                  alt=""
+                  src="{% static "src/image-19@2x.png" %}"
+                />
+
+                <div class="frame-parent4">
+                  <div class="apple-ipad-mini-6-wi-fi-parent">
+                    <b class="apple-ipad-mini">Apple iPad Mini 6 Wi-Fi</b>
+                    <div class="huge-iconinterfacesolidstar-parent">
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+                    </div>
+                  </div>
+                  <div class="div">$500.00</div>
+                </div>
+              </div>
+              <div class="div3">
+                <div class="frame-parent4">
+                  <div class="apple-ipad-mini-6-wi-fi-parent">
+                    <b class="apple-ipad-mini">Microsoft Surface Go</b>
+                    <div class="huge-iconinterfacesolidstar-parent">
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+                    </div>
+                  </div>
+                  <div class="div">$399.00</div>
+                </div>
+                <div class="item"></div>
+                <img
+                  class="image-19-icon"
+                  alt=""
+                  src="{% static "src/image-20@2x.png" %}"
+                />
+              </div>
+              <div class="div3">
+                <div class="frame-parent4">
+                  <div class="apple-ipad-mini-6-wi-fi-parent">
+                    <b class="apple-ipad-mini">LG 4K Ultra UHD TV</b>
+                    <div class="huge-iconinterfacesolidstar-parent">
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+                    </div>
+                  </div>
+                  <div class="div">$5500.00</div>
+                </div>
+                <div class="item"></div>
+                <img
+                  class="image-21-icon"
+                  alt=""
+                  src="{% static "src/image-21@2x.png" %}"
+                />
+              </div>
+            </div>
+            <div class="parent">
+              <div class="div3">
+                <div class="item"></div>
+                <img
+                  class="image-21-icon"
+                  alt=""
+                  src="{% static "src/image-18@2x.png" %}"
+                />
+
+                <div class="frame-parent4">
+                  <div class="apple-ipad-mini-6-wi-fi-parent">
+                    <b class="apple-ipad-mini">Samsung Galaxy S22 Ultra</b>
+                    <div class="huge-iconinterfacesolidstar-parent">
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+                    </div>
+                  </div>
+                  <div class="div">$1350.00</div>
+                </div>
+              </div>
+              <div class="div3">
+                <div class="frame-parent4">
+                  <div class="apple-ipad-mini-6-wi-fi-parent">
+                    <b class="apple-ipad-mini">Apple iPhone 14 Plus</b>
+                    <div class="huge-iconinterfacesolidstar-parent">
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+                    </div>
+                  </div>
+                  <div class="div">$850.00</div>
+                </div>
+                <div class="item"></div>
+                <img
+                  class="image-19-icon"
+                  alt=""
+                  src="{% static "src/image-22@2x.png" %}"
+                />
+              </div>
+              <div class="div3">
+                <div class="frame-parent4">
+                  <div class="apple-ipad-mini-6-wi-fi-parent">
+                    <b class="apple-ipad-mini">Bose QuietComfort 45</b>
+                    <div class="huge-iconinterfacesolidstar-parent">
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+                    </div>
+                  </div>
+                  <div class="div">$300.00</div>
+                </div>
+                <div class="item"></div>
+                <img
+                  class="image-19-icon"
+                  alt=""
+                  src="{% static "src/image-17@2x.png" %}"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="advertisement">
+        <img class="mask-group-icon4" alt="" src="{{ adBanner.image.url }}" />
+
+        <div class="frame-parent10">
+          <div class="my-account-parent">
+            <b class="apple-iphone-13">{{ adBanner.title }}</b>
+            <div class="you-made-it3">{{ adBanner.description }}</div>
+          </div>
+          <a href="{{ adBanner.button_link }}" class="button14">
+            Shop Now
+            <img
+              class="huge-iconcommunicationoutlin"
+              alt=""
+              src="{% static "src/hugeiconarrowssolidarrowright.svg" %}"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="top-selling-products">
+        <div class="shop-by-catrgories-parent">
+          <b class="our-bestseller-products1">Top Selling Products</b>
+          <div class="frame-parent2">
+            <div class="new-parent">
+              <div class="div">New</div>
+              <div class="frame-child"></div>
+            </div>
+            <div class="div">Featured</div>
+            <div class="div">Top Rated</div>
+          </div>
+        </div>
+        <div class="parent">
+          <div class="div1">
+            <div class="child"></div>
+            <img
+              class="top-selling-big-product"
+              alt=""
+              src="{% static "src/mask-group@2x.png" %}"
+            />
+
+            <b class="apple-ipad-pro-container">
+              <p class="parker-rd-allentown">Apple iPad Pro</p>
+              <p class="parker-rd-allentown">Wi-Fi</p>
+            </b>
+            <div class="div2">$1520</div>
+          </div>
+          <div class="frame-parent3">
+            <div class="parent">
+              <div class="div3">
+                <div class="item"></div>
+                <img
+                  class="image-24-icon"
+                  alt=""
+                  src="{% static "src/image-24@2x.png" %}"
+                />
+
+                <div class="frame-parent4">
+                  <div class="apple-ipad-mini-6-wi-fi-parent">
+                    <b class="apple-ipad-mini">Panasonic Lumix DC-GH5 II</b>
+                    <div class="huge-iconinterfacesolidstar-parent">
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+                    </div>
+                  </div>
+                  <div class="div">$1500.00</div>
+                </div>
+              </div>
+              <div class="div3">
+                <div class="frame-parent4">
+                  <div class="apple-ipad-mini-6-wi-fi-parent">
+                    <b class="apple-ipad-mini">Asus ROG Delta S</b>
+                    <div class="huge-iconinterfacesolidstar-parent">
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+                    </div>
+                  </div>
+                  <div class="div">$250.00</div>
+                </div>
+                <div class="item"></div>
+                <img
+                  class="image-24-icon"
+                  alt=""
+                  src="{% static "src/image-25@2x.png" %}"
+                />
+              </div>
+              <div class="div3">
+                <div class="frame-parent4">
+                  <div class="apple-ipad-mini-6-wi-fi-parent">
+                    <b class="apple-ipad-mini">Xiaomi Fimi X8 Mini</b>
+                    <div class="huge-iconinterfacesolidstar-parent">
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+                    </div>
+                  </div>
+                  <div class="div">$650.00</div>
+                </div>
+                <div class="item"></div>
+                <img
+                  class="image-26-icon"
+                  alt=""
+                  src="{% static "src/image-26@2x.png" %}"
+                />
+              </div>
+            </div>
+            <div class="parent">
+              <div class="div3">
+                <div class="item"></div>
+                <img
+                  class="image-26-icon"
+                  alt=""
+                  src="{% static "src/image-27@2x.png" %}"
+                />
+
+                <div class="frame-parent4">
+                  <div class="apple-ipad-mini-6-wi-fi-parent">
+                    <b class="apple-ipad-mini">Apple iPhone 13</b>
+                    <div class="huge-iconinterfacesolidstar-parent">
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+                    </div>
+                  </div>
+                  <div class="div">$500.00</div>
+                </div>
+              </div>
+              <div class="div3">
+                <div class="frame-parent4">
+                  <div class="apple-ipad-mini-6-wi-fi-parent">
+                    <b class="apple-ipad-mini">Fossil Gen 6 Smart Watch</b>
+                    <div class="huge-iconinterfacesolidstar-parent">
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+                    </div>
+                  </div>
+                  <div class="div">$450.00</div>
+                </div>
+                <div class="item"></div>
+                <img
+                  class="image-24-icon"
+                  alt=""
+                  src="{% static "src/image-28@2x.png" %}"
+                />
+              </div>
+              <div class="div3">
+                <div class="frame-parent4">
+                  <div class="apple-ipad-mini-6-wi-fi-parent">
+                    <b class="apple-ipad-mini">Apple iPad Air Wi-Fi</b>
+                    <div class="huge-iconinterfacesolidstar-parent">
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+
+                      <img
+                        class="huge-iconcommunicationoutlin"
+                        alt=""
+                        src="{% static "src/hugeiconinterfacesolidstar.svg" %}"
+                      />
+                    </div>
+                  </div>
+                  <div class="div">$850.00</div>
+                </div>
+                <div class="item"></div>
+                <img
+                  class="image-24-icon"
+                  alt=""
+                  src="{% static "src/image-29@2x.png" %}"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="our-features">
+        <div class="huge-iconshipping-and-deliver-parent">
+          <img
+            class="huge-iconshipping-and-deliver"
+            alt=""
+            src="{% static "src/hugeiconshipping-and-deliveryoutlinefast-delivery.svg" %}"
+          />
+
+          <div class="free-shipping-parent">
+            <b class="enter-your-email">Free Shipping</b>
+            <div class="free-shipping-for">
+              Free shipping for order above $150
+            </div>
+          </div>
+        </div>
+        <div class="huge-iconshipping-and-deliver-parent">
+          <img
+            class="huge-iconshipping-and-deliver"
+            alt=""
+            src="{% static "src/hugeiconshipping-and-deliveryoutlinepackage-box-8.svg" %}"
+          />
+
+          <div class="free-shipping-parent">
+            <b class="enter-your-email">Money Guarantee</b>
+            <div class="free-shipping-for">Within 30 days for an exchange</div>
+          </div>
+        </div>
+        <div class="huge-iconshipping-and-deliver-parent">
+          <img
+            class="huge-iconshipping-and-deliver"
+            alt=""
+            src="{% static "src/hugeiconshipping-and-deliveryoutlinepackage-box-9.svg" %}"
+          />
+
+          <div class="free-shipping-parent">
+            <b class="enter-your-email">Online Support</b>
+            <div class="free-shipping-for">24 hours a day, 7 days a week</div>
+          </div>
+        </div>
+        <div class="huge-iconshipping-and-deliver-parent">
+          <img
+            class="huge-iconshipping-and-deliver"
+            alt=""
+            src="{% static "src/hugeiconshipping-and-deliveryoutlinepackage-box-10.svg" %}"
+          />
+
+          <div class="free-shipping-parent">
+            <b class="enter-your-email">Flexible Payment</b>
+            <div class="free-shipping-for">Pay with multiple credit cards</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+       <div class="chos">
+        <div class="gooz">
+          <img class="logo-text" alt="" src="{% static "src/Logo%20+%20Text.svg" %}" />
+
+          <div class="call">
+            <img
+              class="huge-iconcommunicationoutlin"
+              alt=""
+              src="{% static "src/hugeiconcommunicationoutlinecalling.svg" %}"
+            />
+  
+            <div class="div">(316) 555-0116</div>
+          </div>
+          <div class="mail">
+            <div class="huge-iconcommunicationoutlin">
+              <div class="huge-iconsocialoutlinegmail-child"></div>
+              <img
+                class="huge-iconsocialoutlinegmail-item"
+                alt=""
+                src="{% static "src/vector-3014.svg" %}"
+              />
+            </div>
+            <div class="div">electro@example.com</div>
+          </div>
+          <div class="address">
+            <img
+              class="huge-iconcommunicationoutlin"
+              alt=""
+              src="{% static "src/hugeicondeviceoutlinelocation.svg" %}"
+            />
+  
+            <div class="div">
+              <p class="parker-rd-allentown">4140 Parker Rd. Allentown,</p>
+              <p class="parker-rd-allentown">New Mexico 31134</p>
+            </div>
+          </div>
+        </div>
+        <div class="information">
+          <b class="div">Information</b>
+          <div class="my-account-parent">
+            <div class="div">My Account</div>
+            <div class="div">Login</div>
+            <div class="div">My Cart</div>
+            <div class="div">My Wishlist</div>
+            <div class="div">Checkout</div>
+          </div>
+        </div>
+        <div class="service">
+          <b class="div">Service</b>
+          <div class="my-account-parent">
+            <div class="div">About Us</div>
+            <div class="div">Careers</div>
+            <div class="div">Delivery Information</div>
+            <div class="div">Privacy Policy</div>
+            <div class="div">Terms & Conditions</div>
+          </div>
+        </div>
+        <div class="subscribe">
+          <div class="subscribe-parent">
+            <b class="div">Subscribe</b>
+            <div class="enter-your-email">
+              Enter your email below to be the first to know about new
+              collections.
+            </div>
+          </div>
+          <div class="mail1">
+            <div class="frame-parent">
+              <div class="huge-iconsocialoutlinegmail-parent">
+                <div class="huge-iconcommunicationoutlin">
+                  <div class="huge-iconsocialoutlinegmail-child"></div>
+                  <img
+                    class="huge-iconsocialoutlinegmail-item"
+                    alt=""
+                    src="{% static "src/vector-3014.svg" %}"
+                  />
+                </div>
+                <div class="div">Your Email</div>
+              </div>
+              <img
+                class="huge-iconarrowsoutlinearrow"
+                alt=""
+                src="{% static "src/hugeiconarrowsoutlinearrowright@2x.png" %}"
+              />
+            </div>
+          </div>
+        </div>
+       </div>
+
+
+        <div class="electro-all-rights">
+          ©2023 Electro All Rights are reserved️
+        </div>
+
+
+        <div class="footer-item"></div>
+        <div class="payment-methodamex-parent">
+          <img
+            class="payment-methodamex-icon"
+            alt=""
+            src="{% static "src/payment-methodamex.svg" %}"
+          />
+
+          <img
+            class="payment-methodgooglepay-icon"
+            alt=""
+            src="{% static "src/payment-methodgooglepay.svg" %}"
+          />
+
+          <img
+            class="payment-methodvisa-icon"
+            alt=""
+            src="{% static "src/payment-methodvisa.svg" %}"
+          />
+
+          <img
+            class="payment-methodmastercard-icon"
+            alt=""
+            src="{% static "src/payment-methodmastercard.svg" %}"
+          />
+
+          <img
+            class="payment-methodpaypal-icon"
+            alt=""
+            src="{% static "src/payment-methodpaypal.svg" %}"
+          />
+        </div>
+        <div class="huge-iconsocialsolidfaceboo-parent">
+          <img
+            class="huge-iconcommunicationoutlin"
+            alt=""
+            src="{% static "src/hugeiconsocialsolidfacebook.svg" %}"
+          />
+
+          <img
+            class="huge-iconsocialsolidinstagr"
+            alt=""
+            src="{% static "src/hugeiconsocialsolidinstagram@2x.png" %}"
+          />
+
+          <img
+            class="huge-iconcommunicationoutlin"
+            alt=""
+            src="{% static "src/hugeiconsocialsolidtwitter.svg" %}"
+          />
+        </div>
+      </div>
+      <div id="login" class="login-conteiner">
+        <a href="#"><img class="close-button" src="{% static "src/close%20Button.svg" %}" alt=""></a>
+        <form class="login-form">
+          <div class="login-header">
+            <h2 class="header-title">Welcome 👋</h2>
+            <div class="header-sub-title">Please login here</div>
+          </div>
+          <div class="input-conteiner">
+            <div class="input-label">Email Address</div>
+            <div class="input-textbox-conteiner">
+              <input
+                class="input-textbox"
+                placeholder="kristin.watson@example.com"
+                type="text"
+              />
+            </div>
+          </div>
+          <div class="input-container">
+            <div class="input10">
+              <div class="input-label">Password</div>
+              <div class="input-textbox-conteiner">
+                <input
+                  class="input-textbox"
+                  placeholder="••••••••••••••••••"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="checkbox-parent">
+              <div class="checkbox">
+                <div class="state-wrapper">
+                  <input class="state" checked="{true}" type="checkbox" />
+                </div>
+                <div class="checkbox1">Remember Me</div>
+              </div>
+              <div class="forgetpassword-conteiner">
+                <div class="forgetpassword">Forgot Password?</div>
+              </div>
+            </div>
+          </div>
+          <div class="button-group">
+            <button class="button35">
+              <div class="button36">Login</div>
+            </button>
+            <button class="button37">
+              <a href="#register" class="button38">Register</a>
+            </button>
+          </div>
+          <div class="frame-parent39">
+            <div class="rectangle-wrapper">
+              <div class="frame-child18"></div>
+            </div>
+            <div class="or-login-with">Or Login With</div>
+            <div class="rectangle-frame">
+              <div class="frame-child19"></div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="button39">
+              <div class="google-wrapper">
+                <img class="google-icon" alt="" src="{% static "src/google.svg" %}" />
+              </div>
+              <div class="button40">Login with Google</div>
+            </button>
+            <button class="button41">
+              <div class="apple-wrapper">
+                <img class="apple-icon" alt="" src="{% static "src/apple.svg" %}" />
+              </div>
+              <div class="button42">Login with Apple</div>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div id="register" class="register-conteiner">
+        <a href="#"><img class="close-button" src="{% static "src/close%20Button.svg" %}" alt=""></a>
+        <form class="login-form">
+          <div class="login-header">
+            <h2 class="header-title">Create New Account</h2>
+            <div class="header-sub-title">Please enter details</div>
+          </div>
+          <div class="input-conteiner">
+            <div class="input-label">Name</div>
+            <div class="input-textbox-conteiner">
+              <input
+                class="input-textbox"
+                placeholder="kristin Watson"
+                type="text"
+              />
+            </div>
+          </div>
+          <div class="input-conteiner">
+            <div class="input-label">Email Address</div>
+            <div class="input-textbox-conteiner">
+              <input
+                class="input-textbox"
+                placeholder="kristin.watson@example.com"
+                type="text"
+              />
+            </div>
+          </div>
+          <div class="input-container">
+            <div class="input10">
+              <div class="input-label">Password</div>
+              <div class="input-textbox-conteiner">
+                <input
+                  class="input-textbox"
+                  placeholder="••••••••••••••••••"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="checkbox-parent">
+              <div class="checkbox">
+                <div class="state-wrapper">
+                  <input class="state" checked="{true}" type="checkbox" />
+                </div>
+                <div class="checkbox1">Remember Me</div>
+              </div>
+              <div class="forgetpassword-conteiner">
+                <div class="forgetpassword">Forgot Password?</div>
+              </div>
+            </div>
+          </div>
+          <div class="button-group">
+            <button class="button35">
+              <a href="#otp" class="button36">Register</a>
+            </button>
+          </div>
+          <div class="frame-parent39">
+            <div class="rectangle-wrapper">
+              <div class="frame-child18"></div>
+            </div>
+            <div class="or-login-with">Or Login With</div>
+            <div class="rectangle-frame">
+              <div class="frame-child19"></div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="button39">
+              <div class="google-wrapper">
+                <img class="google-icon" alt="" src="{% static "src/google.svg" %}" />
+              </div>
+              <div class="button40">Login with Google</div>
+            </button>
+            <button class="button41">
+              <div class="apple-wrapper">
+                <img class="apple-icon" alt="" src="{% static "src/apple.svg" %}" />
+              </div>
+              <div class="button42">Login with Apple</div>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div id="otp" class="otp-conteiner">
+        <a href="#"><img class="close-button" src="{% static "src/close%20Button.svg" %}" alt=""></a>
+        <form class="login-form">
+          <div class="login-header">
+            <h2 class="header-title">Enter OTP</h2>
+            <div class="header-sub-title">We have share a code of your registered email 
+              address kristin.watson@example.com</div>
+          </div>
+          <div class="otp-input-conteiner">
+              <input class="otp-input" type="text" placeholder="3" inputmode="numeric" maxlength="1">
+              <input class="otp-input" type="text" placeholder="1" inputmode="numeric" maxlength="1">
+              <input class="otp-input" type="text" inputmode="numeric" maxlength="1">
+              <input class="otp-input" type="text" inputmode="numeric" maxlength="1">
+              <input class="otp-input" type="text" inputmode="numeric" maxlength="1">
+          </div>
+          <div class="button-group">
+            <button class="button35">
+              <a href="#password-changed" class="button36">Send OTP</a>
+            </button>
+          </div>
+
+        </form>
+      </div>
+      <div id="password-changed" class="password-changed-conteiner">
+        <form class="login-form">
+          <div class="password-header">
+            <img class="lock-icon" src="{% static "src/Lock%20icon.svg" %}" alt="">
+            <h2 class="password-header-title">Password Changed
+              Successfully</h2>
+            <div class="password-header-sub-title">Your password has been updated</div>
+            <div class="password-header-sub-title">Successfully</div>
+          </div>
+
+          <div class="button-group">
+            <button class="button35">
+              <a href="#" class="button36">Back to Login</a>
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+<div style="width: 40%;
+    border: 1px solid black;
+    background-color: lightcyan;
+    font-family: Helvetica, sans-serif;">
+        <div style="margin: 5%;">
+            <h1>
+                <u>Dictionary Data</u>
+            </h1>
+            <h2>
+                <u>All Data</u>
+            </h2>
+            <h4 id='alldata'></h4><br>
+            <h2>
+                <u>Neat Data</u>
+            </h2>
+            <h4 id='neatdata'></h4>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    var data = JSON.parse("{{data|escapejs}}");
+    var dataNode = document.getElementById('alldata');
+    dataNode.innerHTML+="{{data|escapejs}}";
+    dataNode = document.getElementById('neatdata');
+    for(var x in data){
+        dataNode.innerHTML+=x+' : '+data[x]+'<br><br>';
+    }
+</script>
