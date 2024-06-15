@@ -126,7 +126,7 @@
               {{ headBanner.description }}
             </div>
           </div>
-          <a href="{{ headBanner.button_link }}" class="shop-now-button">
+          <a {% if user_logged_in != None %}href="{{ headBanner.button_link }}"{% endif %} class="shop-now-button">
             <div class="div">Shop Now</div>
             <img
               class="huge-iconcommunicationoutlin"
@@ -1077,7 +1077,9 @@
       </div>
       <div id="login" class="login-conteiner">
         <a href="#"><img class="close-button" src="{% static "src/close%20Button.svg" %}" alt=""></a>
-        <form class="login-form">
+        <form method="POST" action="" class="login-form">
+            {% csrf_token %}
+            <input type="hidden" name="type" value="login">
           <div class="login-header">
             <h2 class="header-title">Welcome 👋</h2>
             <div class="header-sub-title">Please login here</div>
@@ -1085,22 +1087,24 @@
           <div class="input-conteiner">
             <div class="input-label">Email Address</div>
             <div class="input-textbox-conteiner">
-              <input
-                class="input-textbox"
-                placeholder="kristin.watson@example.com"
-                type="text"
-              />
+{#              <input#}
+{#                class="input-textbox"#}
+{#                placeholder="kristin.watson@example.com"#}
+{#                type="text"#}
+{#              />#}
+                {{ login_form.username }}
             </div>
           </div>
           <div class="input-container">
             <div class="input10">
               <div class="input-label">Password</div>
               <div class="input-textbox-conteiner">
-                <input
-                  class="input-textbox"
-                  placeholder="••••••••••••••••••"
-                  type="text"
-                />
+{#                <input#}
+{#                  class="input-textbox"#}
+{#                  placeholder="••••••••••••••••••"#}
+{#                  type="text"#}
+{#                />#}
+              {{ login_form.password }}
               </div>
             </div>
             <div class="checkbox-parent">
@@ -1151,7 +1155,9 @@
 
       <div id="register" class="register-conteiner">
         <a href="#"><img class="close-button" src="{% static "src/close%20Button.svg" %}" alt=""></a>
-        <form class="login-form">
+        <form method="POST" action="" class="login-form">
+            {% csrf_token %}
+            <input type="hidden" name="type" value="signup">
           <div class="login-header">
             <h2 class="header-title">Create New Account</h2>
             <div class="header-sub-title">Please enter details</div>
@@ -1159,32 +1165,46 @@
           <div class="input-conteiner">
             <div class="input-label">Name</div>
             <div class="input-textbox-conteiner">
-              <input
-                class="input-textbox"
-                placeholder="kristin Watson"
-                type="text"
-              />
+                {{ signup_form.username }}
+{#              <input#}
+{#                class="input-textbox"#}
+{#                placeholder="kristin Watson"#}
+{#                type="text"#}
+{#              />#}
             </div>
           </div>
           <div class="input-conteiner">
             <div class="input-label">Email Address</div>
             <div class="input-textbox-conteiner">
-              <input
-                class="input-textbox"
-                placeholder="kristin.watson@example.com"
-                type="text"
-              />
+                {{ signup_form.email }}
+{#              <input#}
+{#                class="input-textbox"#}
+{#                placeholder="kristin.watson@example.com"#}
+{#                type="text"#}
+{#              />#}
             </div>
           </div>
           <div class="input-container">
             <div class="input10">
               <div class="input-label">Password</div>
               <div class="input-textbox-conteiner">
-                <input
-                  class="input-textbox"
-                  placeholder="••••••••••••••••••"
-                  type="text"
-                />
+                  {{ signup_form.password1 }}
+{#                <input#}
+{#                  class="input-textbox"#}
+{#                  placeholder="••••••••••••••••••"#}
+{#                  type="text"#}
+{#                />#}
+              </div>
+            </div>
+              <div class="input10">
+              <div class="input-label">Confirm Password</div>
+              <div class="input-textbox-conteiner">
+                  {{ signup_form.password2 }}
+{#                <input#}
+{#                  class="input-textbox"#}
+{#                  placeholder="••••••••••••••••••"#}
+{#                  type="text"#}
+{#                />#}
               </div>
             </div>
             <div class="checkbox-parent">
@@ -1201,7 +1221,7 @@
           </div>
           <div class="button-group">
             <button class="button35">
-              <a href="#otp" class="button36">Register</a>
+              <a type="submit" class="button36">Register</a>
             </button>
           </div>
           <div class="frame-parent39">
