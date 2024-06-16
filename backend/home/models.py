@@ -28,12 +28,12 @@ class Product(models.Model):
 
 
 class Video(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, related_name="videos", on_delete=models.CASCADE)
     video_url = models.URLField(blank=True, null=True)
 
 
 class Image(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, related_name="images", on_delete=models.CASCADE)
     image = models.ImageField(upload_to='images/')
 
 

@@ -6,7 +6,7 @@
     <title>Electro</title>
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <link rel="stylesheet" href="{% static "css/global.css" %}"/>
-    <link rel="stylesheet" href="{% static "css/product-description.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/product-description.css" %}?{% now "U" %}"/>
 
     <link
       rel="stylesheet"
@@ -181,51 +181,38 @@
                       src="{% static "src/hugeiconarrowssoliddirectionright-01.svg" %}"
                     />
                   </div>
-                  <div class="apple-iphone-145">Apple iPhone 14 Pro</div>
+                  <div class="apple-iphone-145">{{ product.name }}</div>
                 </div>
                 <div class="family-link-set">
                   <div class="data-aggregator">
                     <div class="data-aggregator-child"></div>
+                      {% for image in product.images.all %}
+                          {% if forloop.counter == 1 %}
                     <img
                       class="image-16-icon2"
                       loading="lazy"
                       alt=""
-                      src="{% static "src/iphone14pro.png" %}"
+                      src="{{ image.image.url }}"
+{#                      src="{% static "src/iphone14pro.png" %}"#}
                     />
+                          {% endif %}
+                      {% endfor %}
                   </div>
                   <div class="shape-assembler">
+                      {% for image in product.images.all %}
+                          {% if forloop.counter != 1 %}
                     <div class="sub-pic-background">
                    
                       <img
+                              class="sub-image"
                         loading="lazy"
                         alt=""
-                        src="{% static "src/iphone-koochooloo.svg" %}"
+                        src="{{ image.image.url }}"
+{#                        src="{% static "src/iphone-koochooloo.svg" %}"#}
                       />
                     </div>
-                    <div class="sub-pic-background">
-                      
-                      <img
-                        loading="lazy"
-                        alt=""
-                        src="{% static "src/iphone-koochooloo.svg" %}"
-                      />
-                    </div>
-                    <div class="sub-pic-background">
-                    
-                      <img
-                        loading="lazy"
-                        alt=""
-                        src="{% static "src/iphone-koochooloo.svg" %}"
-                      />
-                    </div>
-                    <div class="sub-pic-background">
-                      
-                      <img
-                        loading="lazy"
-                        alt=""
-                        src="{% static "src/iphone-koochooloo.svg" %}"
-                      />
-                    </div>
+                           {% endif %}
+                      {% endfor %}
                   </div>
                 </div>
               </div>
@@ -233,7 +220,7 @@
                 <div class="size-adjustor">
                   <div class="alignment-aligner">
                     <div class="image-compressor">
-                      <h2 class="apple-iphone-146">Apple iPhone 14 Pro</h2>
+                      <h2 class="apple-iphone-146">{{ product.name }}</h2>
                       <div class="data-divider">
                         <div class="shape-splitter-parent">
                           <div class="shape-splitter">
@@ -272,7 +259,7 @@
                           </div>
                           <div class="reviews2">5.0 (121 Reviews)</div>
                         </div>
-                        <div id="product-price-id" class="product-price">$1999.00</div>
+                        <div id="product-price-id" class="product-price">${{ product.price }}</div>
                       </div>
                     </div>
                     <button class="button57">
@@ -281,10 +268,7 @@
                   </div>
                   <div class="alignment-system">
                     <div class="it-is-a3">
-                      It is a long established fact that a reader will be
-                      distracted by the readable content of a page when looking
-                      at its layout. The point of using Lorem Ipsum is that it
-                      has a more-or-less normal distribution.
+                      {{ product.description }}
                     </div>
                   </div>
                   <div class="data-sorter4">

@@ -1071,6 +1071,10 @@
   height: 1px;
   display: none;
 }
+.sub-image{
+  width: 100px;
+  height: 100px;
+}
 .information-table{
   border-spacing: 15px;
   margin-bottom: 100px;

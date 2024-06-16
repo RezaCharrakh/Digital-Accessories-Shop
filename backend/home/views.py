@@ -3,8 +3,8 @@ from .forms import CustomUserCreationForm
 from django.contrib.auth import login, authenticate
 from django.urls import reverse_lazy
 from django.shortcuts import render, redirect
-from django.views.generic import TemplateView
-from .models import Banner
+from django.views.generic import TemplateView, DetailView
+from .models import *
 from django.contrib.sessions.models import Session
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -20,6 +20,18 @@ class HomePageView(TemplateView):
         context['signup_form'] = CustomUserCreationForm()
         context['login_form'] = AuthenticationForm()
         context['user_logged_in'] = None
+        products = Product.objects.all()
+        products_with_images = []
+
+        # Add the first image of each product to the context
+        for product in products:
+            first_image = product.images.first()
+            products_with_images.append({
+                'product': product,
+                'first_image': first_image,
+            })
+        context['products_with_images'] = products_with_images
+        context['first_product_with_images'] = products_with_images
         return context
 
     def post(self, request, *args, **kwargs):
@@ -58,7 +70,7 @@ class HomePageView(TemplateView):
             username = request.POST['username']
             password = request.POST['password']
             user = authenticate(request, username=username, password=password)
-        
+
 
             print("ada")
             login(request, user)
@@ -103,7 +115,12 @@ class HomePageView(TemplateView):
 #             request.session.save()
 #             return render(request, 'home-page.htm')
 
-class DetailPageView(LoginRequiredMixin, TemplateView):
+class DetailPageView(LoginRequiredMixin, DetailView):
+    model = Product
     template_name = 'product-description.html'
     login_url = 'login'
     redirect_field_name = 'next'
+    context_object_name = 'product'
+
+    # def get_queryset(self):
+    #     return Product.objects.filter(is_published=True)  # Optional: Filter products as needed
